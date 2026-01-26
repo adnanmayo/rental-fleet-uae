@@ -1,0 +1,31 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+
+# AhrefsBot
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+# SemrushBot
+User-agent: SemrushBot
+Crawl-delay: 10
+
+# Host
+Host: https://rentalfleetuae.com
+
+# Sitemaps
+Sitemap: https://rentalfleetuae.com/sitemap.xml
