@@ -5,6 +5,14 @@
 
 import mysql from 'mysql2/promise';
 
+function getConnectionLimit(): number {
+  const fromEnv = Number(process.env.MYSQL_CONNECTION_LIMIT);
+  if (Number.isFinite(fromEnv) && fromEnv > 0) return Math.floor(fromEnv);
+  // Next.js build uses multiple workers (separate processes). Keep the per-process pool small
+  // so we don't exceed MySQL max_connections during prerender.
+  return process.env.NODE_ENV === "production" ? 2 : 10;
+}
+
 // Database configuration from environment variables
 const dbConfig = {
   host: process.env.MYSQL_HOST || 'localhost',
@@ -13,7 +21,7 @@ const dbConfig = {
   password: process.env.MYSQL_PASSWORD || '',
   database: process.env.MYSQL_DATABASE || 'rental_fleet_uae',
   waitForConnections: true,
-  connectionLimit: 10,
+  connectionLimit: getConnectionLimit(),
   queueLimit: 0,
   enableKeepAlive: true,
   keepAliveInitialDelay: 0,
