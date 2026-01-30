@@ -75,7 +75,7 @@ rental-fleet-uae/
 - ✅ **SEO Optimized:** Unique meta tags, titles, descriptions
 - ✅ **Schema Markup:** JSON-LD on every page
 - ✅ **Internal Links:** 5-10 contextual links per page
-- ✅ **Backlinks:** 70% of links to autycloud.com & adnanrentals.com
+- ✅ **Backlinks:** Contextual links to autycloud.com where relevant
 
 ### Performance
 - ✅ **Build Time:** ~2-3 minutes for Tier 1 pages
@@ -191,7 +191,7 @@ export const dynamicParams = true;
 - Available vehicles grid (links to spoke pages)
 - Available services
 - FAQs (3-6 questions)
-- CTAs to autycloud.com and adnanrentals.com
+- CTAs to autycloud.com
 - Schema.org Place markup
 
 **SEO:**
@@ -282,16 +282,9 @@ Every page includes strategic links to promoted sites:
 - **UTM tracking:** `?utm_source=rentalfleetuae&utm_campaign={page-slug}`
 - **Context:** Embedded in content naturally
 
-### Promoted Site #2: Adnan Rentals
-- **Links per page:** 2-3
-- **Anchor text:** "Book Now", "Adnan Rentals"
-- **UTM tracking:** `?utm_source=rentalfleetuae&utm_campaign={page-slug}`
-- **Context:** Primary CTA buttons
-
 ### Link Distribution
-- **70%** to promoted sites (autycloud + adnanrentals)
-- **20%** internal links (other programmatic pages)
-- **10%** to blog and resources
+- **Contextual** links to AutyCloud when discussing fleet software
+- Internal links to other programmatic pages and the blog/resources
 
 ---
 
@@ -426,7 +419,6 @@ Before deploying, verify:
 
 ### Backlinks ✅
 - [ ] Links to autycloud.com present
-- [ ] Links to adnanrentals.com present
 - [ ] UTM tracking working
 - [ ] 70% outbound link ratio
 

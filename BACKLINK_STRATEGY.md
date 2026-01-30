@@ -3,7 +3,7 @@
 
 **Version:** 1.0
 **Target:** 50+ high-quality backlinks in first 6 months
-**Focus:** Benefit autycloud.com and adnanrentals.com through link juice flow
+**Focus:** Benefit autycloud.com through high-intent traffic and authority
 
 ---
 
@@ -12,7 +12,7 @@
 This document outlines a comprehensive, ethical backlink acquisition strategy designed to:
 1. Establish rentalfleetuae.com as an authoritative resource
 2. Generate natural, high-quality backlinks from relevant UAE sites
-3. Pass link authority to promoted sites (autycloud.com, adnanrentals.com)
+3. Pass link authority to promoted sites (autycloud.com)
 4. Build sustainable, long-term domain authority
 
 **Core Principle**: Create content so valuable that people *want* to link to it.
@@ -76,7 +76,7 @@ Ongoing: Update quarterly, re-promote
 
 **B. "UAE Tourist Rental Behavior Study"**
 - Analyze: Peak seasons, vehicle preferences, booking patterns
-- Partner with Adnan Rentals for real data (anonymized)
+- Partner with a UAE rental operator for real data (anonymized)
 - Publish quarterly updates
 - **Expected Backlinks**: 5-10 per quarter (travel blogs, tourism sites)
 
@@ -704,7 +704,7 @@ Value Generated:
 - Total value: $2,000-5,000/month
 
 Additional Benefits (not quantified):
-- Traffic to promoted sites (autycloud.com, adnanrentals.com)
+- Traffic to promoted sites (autycloud.com)
 - Brand authority
 - Lead generation
 

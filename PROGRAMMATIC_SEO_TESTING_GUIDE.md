@@ -113,7 +113,7 @@ npm run dev
 - ✅ Pages load without errors
 - ✅ Content is unique for each combination
 - ✅ Internal links work properly
-- ✅ Backlinks to autycloud.com and adnanrentals.com are present
+- ✅ Backlinks to autycloud.com are present where relevant
 - ✅ Schema.org JSON-LD is present in source
 - ✅ Meta tags are unique per page
 
@@ -139,7 +139,6 @@ Look for `<script type="application/ld+json">`:
 Each page should have:
 - 3-5 links to other programmatic pages
 - 2-3 links to autycloud.com
-- 2-3 links to adnanrentals.com
 
 ### Step 4: Content Quality Check (15 minutes)
 
@@ -380,7 +379,6 @@ ls -la data/entities/
 
 5. **Backlink Success:**
    - Clicks to autycloud.com
-   - Clicks to adnanrentals.com
    - Referral traffic
    - Conversion rates
 

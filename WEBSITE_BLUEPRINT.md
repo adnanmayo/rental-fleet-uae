@@ -3,13 +3,13 @@
 
 **Version:** 1.0
 **Last Updated:** January 2026
-**Target:** White-hat backlink generation for autycloud.com and adnanrentals.com
+**Target:** White-hat backlink generation for autycloud.com
 
 ---
 
 ## 📋 Project Overview
 
-This is a comprehensive Next.js 15 website designed as an authoritative backlink hub for the UAE rental business industry. The site focuses on creating high-quality, linkable content that naturally attracts backlinks while internally promoting autycloud.com (fleet management software) and adnanrentals.com (car rental services).
+This is a comprehensive Next.js 15 website designed as an authoritative backlink hub for the UAE rental business industry. The site focuses on creating high-quality, linkable content that naturally attracts backlinks while internally promoting autycloud.com (fleet management software).
 
 ### Key Objectives
 1. **Backlink Generation**: Create linkable assets that other UAE rental/travel sites will reference
@@ -81,7 +81,7 @@ rental-fleet-uae/
 ### 1. Site Configuration (`lib/site-config.ts`)
 Comprehensive configuration file including:
 - Site metadata and SEO settings
-- Promoted sites configuration (autycloud.com, adnanrentals.com)
+- Promoted sites configuration (autycloud.com)
 - Navigation structure
 - Footer link organization
 - Blog categories with SEO keywords
@@ -150,7 +150,7 @@ Comprehensive landing page with:
 1. **Mission Statement**
    - Position as non-profit-like resource hub
    - "Empowering UAE rental businesses through knowledge sharing"
-   - Subtly promote partners (AutyCloud, Adnan Rentals)
+   - Subtly promote partner (AutyCloud)
 
 2. **Our Story**
    - Founded by industry experts
@@ -178,7 +178,6 @@ Comprehensive landing page with:
 
 5. **Our Partners**
    - AutyCloud: "Leading fleet management software"
-   - Adnan Rentals: "Trusted car rental provider"
    - Strategic partnership explanation
 
 6. **Statistics Worth Citing** (Backlink Bait)
@@ -196,7 +195,7 @@ export const metadata: Metadata = generateMetadata({
 });
 ```
 
-**Internal Links**: 5-7 links each to autycloud.com and adnanrentals.com
+**Internal Links**: 5-7 links to autycloud.com (where relevant)
 
 ---
 
@@ -221,14 +220,14 @@ export const metadata: Metadata = generateMetadata({
     - Automated booking workflows
     - Data-driven decision making
   - Solution 2: Optimize fleet composition for UAE market
-    - SUVs for families and desert trips (link to [Adnan Rentals SUV fleet](adnanrentals.com))
+    - SUVs for families and desert trips (use neutral examples; avoid outbound booking links)
     - Sedans for business travelers
     - Luxury vehicles for premium segment
   - Solution 3: Strategic partnerships
   - Solution 4: Customer experience automation
   - Case Study: How a mid-size operator grew 150% with technology
   - Actionable checklist
-- **Internal Links**: 5 to AutyCloud, 3 to Adnan Rentals, 2 to other blog posts
+- **Internal Links**: 5 to AutyCloud, 2 to other blog posts
 - **External Links**: 2 to authoritative sources (RTA Dubai, industry reports)
 - **Schema Markup**: Article schema with FAQ schema for common questions
 
@@ -247,7 +246,7 @@ export const metadata: Metadata = generateMetadata({
     - Seasonal adjustments for UAE tourism
   - Mistake 4: Neglecting customer data
   - Mistake 5: Inadequate insurance coverage
-  - Success Story: Adnan Rentals' operational efficiency
+  - Success Story: How a UAE operator improved efficiency
 - **Linkable Asset**: Downloadable "Fleet Management Checklist"
 
 #### 3. **UAE Driving Laws for Rental Vehicles: Complete Guide 2024**
@@ -277,7 +276,7 @@ export const metadata: Metadata = generateMetadata({
 #### 5. **Best Vehicles for Ramadan Travel in the UAE**
 - **Category**: Rental Tips
 - **Seasonal SEO**: Targets pre-Ramadan search traffic
-- **Content**: Vehicle recommendations, links to Adnan Rentals inventory
+- **Content**: Vehicle recommendations (no outbound booking links)
 
 #### 6. **Customer Experience: Elevating Your Rental Service**
 - **Category**: Customer Experience
@@ -410,7 +409,7 @@ export const metadata: Metadata = generateMetadata({
 2. **Fleet Size Optimizer**
    - Input: Target market, seasonal demand, budget
    - Output: Recommended fleet composition
-   - Links to Adnan Rentals for vehicle examples
+   - Uses neutral example data for vehicle categories
 
 3. **Pricing Strategy Calculator**
    - Input: Vehicle type, season, competition
@@ -457,7 +456,7 @@ export const metadata: Metadata = generateMetadata({
 3. **Submit Your Rental Story**
    - User-generated content opportunity
    - Featured stories get published (with backlink to submitter's site)
-   - Case studies promote AutyCloud/Adnan Rentals
+   - Case studies promote AutyCloud (fleet technology)
 
 4. **FAQ** (SEO-Optimized)
    - "Can I republish your infographics?" → Yes, with attribution
@@ -587,19 +586,13 @@ export default function NotFound() {
           </Link>
         </div>
 
-        {/* Promoted Sites */}
+        {/* Promoted Site */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href={siteConfig.promotedSites.autycloud.url}
             className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
           >
             Explore Fleet Software
-          </a>
-          <a
-            href={siteConfig.promotedSites.adnanRentals.url}
-            className="px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition"
-          >
-            Rent a Vehicle
           </a>
         </div>
       </div>
@@ -672,7 +665,7 @@ See `BACKLINK_STRATEGY.md` for detailed playbook.
 - Domain Authority > 30
 - Top 10 rankings for 5+ primary keywords
 - 10,000+ monthly organic visitors
-- 30% of traffic goes to promoted sites (autycloud/adnanrentals)
+- Meaningful click-through to promoted software pages (AutyCloud)
 
 ---
 
@@ -743,7 +736,7 @@ See `BACKLINK_STRATEGY.md` for detailed playbook.
 - Transparency about promoted sites
 
 **Link Strategy** (Per 1000 words):
-- 5-7 internal links to autycloud.com or adnanrentals.com
+- 5-7 internal links to autycloud.com (contextual, relevant)
 - 2-3 internal links to other site pages
 - 2-3 external links to high-authority sources
 - Natural anchor text, not over-optimized

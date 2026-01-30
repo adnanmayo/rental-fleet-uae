@@ -104,15 +104,10 @@ export default async function CompareIndexPage() {
               <div className="font-bold text-gray-900 mb-1">Tools</div>
               <div className="text-sm text-gray-600">Calculators and planning helpers →</div>
             </Link>
-            <a
-              href={siteConfig.promotedSites.adnanRentals.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white border rounded-2xl p-6 hover:shadow-md transition"
-            >
-              <div className="font-bold text-gray-900 mb-1">Rent a car</div>
-              <div className="text-sm text-gray-600">Book with Adnan Rentals →</div>
-            </a>
+            <Link href="/blog" className="bg-white border rounded-2xl p-6 hover:shadow-md transition">
+              <div className="font-bold text-gray-900 mb-1">Read guides</div>
+              <div className="text-sm text-gray-600">Ops, pricing, and fleet tech →</div>
+            </Link>
           </div>
         </div>
       </section>

@@ -484,7 +484,6 @@ https://rentalfleetuae.com/tools/roi-calculator
 ```
 ✅ Link to promoted sites: 5-7 per article
    - autycloud.com (for tech/software mentions)
-   - adnanrentals.com (for rental service mentions)
 ✅ Link to other site pages: 3-5 per article
    - Related blog posts
    - Resource pages
@@ -539,7 +538,7 @@ UAE car rental tips
 ```
 Informational: "how to start rental business" → Blog post
 Commercial: "best fleet software" → Resource/comparison page
-Transactional: "rent car Dubai" → Link to adnanrentals.com
+Transactional: "fleet management software UAE" → Link to autycloud.com
 Navigational: "autycloud login" → Not our target
 ```
 
@@ -723,7 +722,7 @@ Example in Blog Post:
 2. Identify orphan pages (no internal links pointing to them)
 3. Find pages with too few internal links (<3)
 4. Update internal links when publishing new related content
-5. Ensure promoted sites (autycloud, adnanrentals) are linked from multiple pages
+5. Ensure AutyCloud is linked from multiple relevant pages
 ```
 
 ---

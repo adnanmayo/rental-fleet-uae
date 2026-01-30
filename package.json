@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run db:migrate:knex && next build",
+    "build": "npm run db:migrate:knex && npm run db:seed:blog && npm run db:seed:keyword-guides && next build",
     "start": "next start",
     "lint": "eslint",
     "postbuild": "next-sitemap",
     "db:migrate": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' ts-node --transpile-only scripts/migrate-json-to-mysql.ts",
     "db:migrate:run": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' ts-node --transpile-only scripts/run-db-migrations.ts",
     "db:migrate:knex": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' ts-node --transpile-only scripts/run-knex-migrations.ts",
-    "db:seed:blog": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' ts-node --transpile-only scripts/seed-blog-articles.ts"
+    "db:seed:blog": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' ts-node --transpile-only scripts/seed-blog-articles.ts",
+    "db:seed:keyword-guides": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' ts-node --transpile-only scripts/seed-keyword-guides.ts"
   },
   "dependencies": {
     "dotenv": "^17.2.3",

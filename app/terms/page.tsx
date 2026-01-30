@@ -126,15 +126,6 @@ export default function TermsPage() {
                 >
                   AutyCloud
                 </a>
-                {" "}and{" "}
-                <a
-                  href={siteConfig.promotedSites.adnanRentals.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-700 underline"
-                >
-                  Adnan Rentals
-                </a>
                 . We do not investigate, monitor, or check such Third-Party Websites for accuracy, appropriateness, or completeness. We are not responsible for any third-party content accessed through the website.
               </p>
             </div>

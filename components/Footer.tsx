@@ -147,15 +147,6 @@ export default function Footer() {
               >
                 {siteConfig.promotedSites.autycloud.name}
               </a>
-              {' '}and{' '}
-              <a
-                href={siteConfig.promotedSites.adnanRentals.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300"
-              >
-                {siteConfig.promotedSites.adnanRentals.name}
-              </a>
             </p>
           </div>
         </div>

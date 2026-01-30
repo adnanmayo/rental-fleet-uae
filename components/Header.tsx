@@ -50,14 +50,6 @@ export default function Header() {
             >
               Fleet Software
             </a>
-            <a
-              href={siteConfig.promotedSites.adnanRentals.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium hover:from-blue-700 hover:to-blue-800 transition-all shadow-md hover:shadow-lg"
-            >
-              Rent Now
-            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -104,14 +96,6 @@ export default function Header() {
                   className="text-center text-sm font-medium text-blue-600 hover:text-blue-700 py-2 border border-blue-600 rounded-lg transition-colors"
                 >
                   Fleet Software
-                </a>
-                <a
-                  href={siteConfig.promotedSites.adnanRentals.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-center bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium hover:from-blue-700 hover:to-blue-800 transition-all"
-                >
-                  Rent Now
                 </a>
               </div>
             </div>

@@ -1,9 +1,8 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getEntityBySlug, getEntitiesByType, getRelatedEntities } from '@/lib/programmatic/entities';
+import { getEntityBySlug, getEntitiesByType } from '@/lib/programmatic/entities';
 import { generateContent } from '@/lib/programmatic/content-generator';
-import { getRevalidationTime } from '@/lib/performance/isr-config';
 import { siteConfig } from '@/lib/site-config';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
@@ -223,19 +222,18 @@ export default async function EmiratePage({ params }: EmiratePageProps) {
                     className="block text-blue-600 hover:text-blue-800 font-medium">
                     → Fleet Management Software
                   </Link>
-                  <Link href={`${siteConfig.promotedSites.adnanRentals.url}?utm_source=rentalfleetuae&utm_campaign=${emirate.slug}`}
-                    className="block text-blue-600 hover:text-blue-800 font-medium">
-                    → Book with Adnan Rentals
-                  </Link>
                   <Link href="/blog" className="block text-blue-600 hover:text-blue-800 font-medium">
                     → Rental Tips & Guides
+                  </Link>
+                  <Link href="/compare" className="block text-blue-600 hover:text-blue-800 font-medium">
+                    → Compare options
                   </Link>
                 </div>
               </div>
 
               {/* Promoted Sites */}
               <div className="bg-white border rounded-xl p-6">
-                <h3 className="text-lg font-bold mb-4">Recommended Services</h3>
+                <h3 className="text-lg font-bold mb-4">Recommended Tools</h3>
                 <div className="space-y-4">
                   <div className="border-l-4 border-blue-500 pl-4">
                     <a href={siteConfig.promotedSites.autycloud.url}
@@ -246,13 +244,15 @@ export default async function EmiratePage({ params }: EmiratePageProps) {
                       {siteConfig.promotedSites.autycloud.description}
                     </p>
                   </div>
-                  <div className="border-l-4 border-amber-500 pl-4">
-                    <a href={siteConfig.promotedSites.adnanRentals.url}
-                      className="font-semibold text-amber-600 hover:text-amber-800">
-                      {siteConfig.promotedSites.adnanRentals.name}
-                    </a>
+                  <div className="border-l-4 border-gray-300 pl-4">
+                    <Link
+                      href="/resources"
+                      className="font-semibold text-gray-800 hover:text-gray-900"
+                    >
+                      Free templates & resources
+                    </Link>
                     <p className="text-sm text-gray-600 mt-1">
-                      Premium car rental services in {emirate.name}
+                      Checklists, market report, and compliance guides.
                     </p>
                   </div>
                 </div>
@@ -346,12 +346,12 @@ export default async function EmiratePage({ params }: EmiratePageProps) {
             Choose from our wide selection of vehicles and enjoy competitive rates with excellent service.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a
-              href={`${siteConfig.promotedSites.adnanRentals.url}?utm_source=rentalfleetuae&utm_campaign=${emirate.slug}`}
+            <Link
+              href="/blog"
               className="bg-amber-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-600 transition"
             >
-              Book Now with Adnan Rentals
-            </a>
+              Read UAE rental guides
+            </Link>
             <a
               href={`${siteConfig.promotedSites.autycloud.url}?utm_source=rentalfleetuae&utm_campaign=${emirate.slug}`}
               className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition"

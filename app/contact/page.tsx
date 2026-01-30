@@ -128,17 +128,6 @@ export default function ContactPage() {
                     </svg>
                     Visit AutyCloud
                   </a>
-                  <a
-                    href={siteConfig.promotedSites.adnanRentals.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center text-blue-600 hover:text-blue-700 group"
-                  >
-                    <svg className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                    Visit Adnan Rentals
-                  </a>
                 </div>
               </div>
             </div>
@@ -359,14 +348,6 @@ export default function ContactPage() {
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-all shadow-lg"
             >
               Try AutyCloud Free
-            </a>
-            <a
-              href={siteConfig.promotedSites.adnanRentals.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition-all"
-            >
-              View Rental Services
             </a>
           </div>
         </div>

@@ -25,12 +25,6 @@ export const siteConfig = {
       name: "AutyCloud",
       description: "Cloud-based fleet management software for UAE rental businesses",
       anchor: "fleet management software"
-    },
-    adnanRentals: {
-      url: "https://adnanrentals.com",
-      name: "Adnan Rentals",
-      description: "Premium car rental services across UAE",
-      anchor: "car rental services"
     }
   },
 
@@ -92,8 +86,7 @@ export const siteConfig = {
     partners: {
       title: "Our Partners",
       links: [
-        { name: "AutyCloud Software", href: "https://autycloud.com", external: true },
-        { name: "Adnan Rentals", href: "https://adnanrentals.com", external: true }
+        { name: "AutyCloud Software", href: "https://autycloud.com", external: true }
       ]
     },
     company: {
@@ -187,16 +180,6 @@ export const linkBuildingKeywords = {
     "fleet analytics",
     "rental business software",
     "vehicle tracking system"
-  ],
-  adnanRentals: [
-    "car rental",
-    "vehicle rental",
-    "rent a car",
-    "luxury car rental",
-    "SUV rental",
-    "Dubai car rental",
-    "UAE vehicle rental",
-    "business car rental"
   ]
 };
 

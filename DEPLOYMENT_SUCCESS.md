@@ -214,7 +214,7 @@ Your SEO-optimized backlink hub for rentalfleetuae.com is now:
 - ✅ Automatically deploying from GitHub
 - ✅ Optimized for search engines
 - ✅ Ready to generate backlinks
-- ✅ Promoting autycloud.com and adnanrentals.com
+- ✅ Promoting autycloud.com
 
 **Share your site:**
 https://rental-fleet-uae.vercel.app

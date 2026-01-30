@@ -131,15 +131,6 @@ export default function PrivacyPage() {
                 >
                   AutyCloud
                 </a>
-                {" "}and{" "}
-                <a
-                  href={siteConfig.promotedSites.adnanRentals.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-700 underline"
-                >
-                  Adnan Rentals
-                </a>
                 , to provide you with relevant products and services.
               </p>
 
@@ -216,15 +207,6 @@ export default function PrivacyPage() {
                   className="text-blue-600 hover:text-blue-700 underline"
                 >
                   AutyCloud
-                </a>
-                {" "}and{" "}
-                <a
-                  href={siteConfig.promotedSites.adnanRentals.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-700 underline"
-                >
-                  Adnan Rentals
                 </a>
                 . We are not responsible for the privacy practices of these third-party sites. We encourage you to review their privacy policies.
               </p>

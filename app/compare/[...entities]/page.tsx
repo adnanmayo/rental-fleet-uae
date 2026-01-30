@@ -364,17 +364,17 @@ export default async function ComparePage({ params }: ComparePageProps) {
             </div>
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href={`${siteConfig.promotedSites.adnanRentals.url}?utm_source=rentalfleetuae&utm_campaign=compare`}
-                className="bg-amber-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-600 transition"
-              >
-                Book Now with Adnan Rentals
-              </a>
-              <a
                 href={`${siteConfig.promotedSites.autycloud.url}?utm_source=rentalfleetuae&utm_campaign=compare`}
                 className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition"
               >
                 Manage Your Fleet
               </a>
+              <Link
+                href="/blog"
+                className="bg-transparent border border-white/60 text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition"
+              >
+                Read fleet guides
+              </Link>
             </div>
           </div>
         </div>

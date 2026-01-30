@@ -101,17 +101,6 @@ export default function NotFound() {
             </svg>
             Explore Fleet Software
           </a>
-          <a
-            href={siteConfig.promotedSites.adnanRentals.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-4 bg-white border-2 border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-all group"
-          >
-            <svg className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg>
-            Rent a Vehicle
-          </a>
         </div>
 
         {/* Go Home */}

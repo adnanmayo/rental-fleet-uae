@@ -1,8 +1,8 @@
 /**
- * Seed Blog Articles into MySQL
+ * Seed Keyword Guides into MySQL
  *
  * Usage:
- *   npm run db:seed:blog
+ *   npm run db:seed:keyword-guides
  *
  * Requires env:
  *   MYSQL_HOST, MYSQL_PORT, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE
@@ -11,9 +11,9 @@
 import "dotenv/config";
 
 // NOTE: use relative imports so ts-node works without path-alias tooling
-import { blogArticles } from "../data/blog-articles";
-import { upsertBlogArticle } from "../lib/database/blog-repository";
 import { closePool, testConnection } from "../lib/database/mysql";
+import { keywordLandingPages } from "../lib/keyword-landing-pages";
+import { upsertKeywordGuide } from "../lib/database/keyword-guides-repository";
 
 function hasDbEnv() {
   return Boolean(process.env.MYSQL_HOST && process.env.MYSQL_USER && process.env.MYSQL_DATABASE);
@@ -22,7 +22,7 @@ function hasDbEnv() {
 async function main() {
   if (!hasDbEnv()) {
     // eslint-disable-next-line no-console
-    console.log("[db:seed:blog] Skipping (MYSQL_* env vars not set).");
+    console.log("[db:seed:keyword-guides] Skipping (MYSQL_* env vars not set).");
     return;
   }
 
@@ -32,26 +32,27 @@ async function main() {
       throw new Error("MySQL connection failed. Check MYSQL_* env vars.");
     }
 
-    for (const a of blogArticles) {
-      await upsertBlogArticle({
-        slug: a.slug,
-        title: a.title,
-        category: a.category,
-        primaryKeyword: a.primaryKeyword,
-        secondaryKeywords: a.secondaryKeywords,
-        excerpt: a.excerpt,
-        contentHtml: a.contentHtml,
-        faqs: a.faqs,
+    for (const p of keywordLandingPages) {
+      await upsertKeywordGuide({
+        slug: p.slug,
+        keyword: p.keyword,
+        category: p.category,
+        title: p.title,
+        description: p.description,
+        h1: p.h1,
+        toc: p.toc,
+        sections: p.sections,
+        faqs: p.faqs,
         status: "published",
-        publishedTime: a.publishedTime,
-        modifiedTime: a.modifiedTime,
+        publishedTime: p.updatedAtISO,
+        modifiedTime: p.updatedAtISO,
       });
       // eslint-disable-next-line no-console
-      console.log(`Upserted: ${a.slug}`);
+      console.log(`Upserted keyword guide: ${p.slug}`);
     }
 
     // eslint-disable-next-line no-console
-    console.log(`Done. Seeded ${blogArticles.length} articles.`);
+    console.log(`Done. Seeded ${keywordLandingPages.length} keyword guides.`);
   } finally {
     await closePool();
   }

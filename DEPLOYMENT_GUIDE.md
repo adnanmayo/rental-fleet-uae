@@ -92,7 +92,6 @@ vercel
 
 ### Internal Links (70% Strategy)
 - ✅ Links to autycloud.com throughout site
-- ✅ Links to adnanrentals.com in relevant context
 - ✅ Natural anchor text variations
 - ✅ Strategic placement in content
 

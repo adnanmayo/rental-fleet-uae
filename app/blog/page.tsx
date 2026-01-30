@@ -3,6 +3,8 @@ import { generateMetadata as genMeta } from "@/lib/seo-utils";
 import { siteConfig } from "@/lib/site-config";
 import { getAllPosts } from "@/lib/blog-posts";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { keywordLandingPages } from "@/lib/keyword-landing-pages";
+import { getAllKeywordGuidesLite, hasDbEnv } from "@/lib/database/keyword-guides-repository";
 
 export const metadata = genMeta({
   title: "Blog - UAE Rental Business Insights & Tips",
@@ -13,6 +15,7 @@ export const metadata = genMeta({
 
 export default async function BlogPage() {
   const posts = await getAllPosts();
+  const keywordGuides = hasDbEnv() ? await getAllKeywordGuidesLite() : keywordLandingPages;
 
   return (
     <>
@@ -144,6 +147,39 @@ export default async function BlogPage() {
         </div>
       </section>
 
+      {/* Software Guides (Programmatic) */}
+      <section className="py-16 bg-white border-t">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-10">
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">
+              Software Guides (UAE, 2026)
+            </h2>
+            <p className="text-gray-600 max-w-3xl">
+              These are “keyword guides” built for common UAE searches (software, CRM, booking, payments, AI, EV ops).
+              They live under the blog so the URLs are clean: <span className="font-mono">/blog/&lt;slug&gt;</span>.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {keywordGuides.map((p) => (
+              <Link
+                key={p.slug}
+                href={`/blog/${p.slug}`}
+                className="bg-gray-50 border border-gray-200 rounded-xl p-6 hover:shadow-md transition"
+              >
+                <div className="text-xs font-semibold text-blue-700 uppercase tracking-wider mb-2">
+                  Guide
+                </div>
+                <div className="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
+                  {p.keyword}
+                </div>
+                <div className="text-sm text-gray-600 line-clamp-3">{p.description}</div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Categories Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -228,7 +264,7 @@ export default async function BlogPage() {
       {/* Resource Links */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="max-w-3xl mx-auto">
             <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
@@ -263,46 +299,6 @@ export default async function BlogPage() {
                     Learn More
                     <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="flex items-start">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                    <svg className="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Premium Car Rental Services
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    Experience excellence with {" "}
-                    <a
-                      href={siteConfig.promotedSites.adnanRentals.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:text-blue-700 underline font-semibold"
-                    >
-                      Adnan Rentals
-                    </a>
-                    , offering top-tier vehicle rental services across the UAE.
-                  </p>
-                  <a
-                    href={siteConfig.promotedSites.adnanRentals.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold group"
-                  >
-                    Visit Website
-                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                   </a>
                 </div>

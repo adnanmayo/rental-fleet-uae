@@ -189,12 +189,21 @@ export default async function EmirateVehiclePage({ params }: VehiclePageProps) {
                 )}
               </div>
               <div className="flex flex-wrap gap-4">
-                <a
-                  href={`${siteConfig.promotedSites.adnanRentals.url}?utm_source=rentalfleetuae&utm_campaign=${emirate.slug}-${vehicle.slug}`}
-                  className="bg-amber-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-600 transition"
-                >
-                  Book Now
-                </a>
+                {compareTargetSlug ? (
+                  <Link
+                    href={`/compare/${vehicle.slug}/${compareTargetSlug}`}
+                    className="bg-amber-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-600 transition"
+                  >
+                    Compare vehicles
+                  </Link>
+                ) : (
+                  <Link
+                    href="/compare"
+                    className="bg-amber-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-600 transition"
+                  >
+                    Compare vehicles
+                  </Link>
+                )}
                 <Link
                   href="#details"
                   className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition"
@@ -328,7 +337,7 @@ export default async function EmirateVehiclePage({ params }: VehiclePageProps) {
             <div className="lg:col-span-1">
               {/* Booking Card */}
               <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-6 mb-8 sticky top-4">
-                <h3 className="text-xl font-bold mb-4">Ready to Book?</h3>
+                <h3 className="text-xl font-bold mb-4">Next steps</h3>
                 <div className="space-y-4">
                   <div>
                     <div className="text-3xl font-bold text-amber-600 mb-1">
@@ -336,18 +345,33 @@ export default async function EmirateVehiclePage({ params }: VehiclePageProps) {
                     </div>
                     <div className="text-sm text-gray-600">Per Day</div>
                   </div>
-                  <a
-                    href={`${siteConfig.promotedSites.adnanRentals.url}?utm_source=rentalfleetuae&utm_campaign=${emirate.slug}-${vehicle.slug}`}
-                    className="block w-full bg-amber-500 text-white text-center px-6 py-3 rounded-lg font-semibold hover:bg-amber-600 transition"
-                  >
-                    Book with Adnan Rentals
-                  </a>
+                  {compareTargetSlug ? (
+                    <Link
+                      href={`/compare/${vehicle.slug}/${compareTargetSlug}`}
+                      className="block w-full bg-amber-500 text-white text-center px-6 py-3 rounded-lg font-semibold hover:bg-amber-600 transition"
+                    >
+                      Compare before you book
+                    </Link>
+                  ) : (
+                    <Link
+                      href="/compare"
+                      className="block w-full bg-amber-500 text-white text-center px-6 py-3 rounded-lg font-semibold hover:bg-amber-600 transition"
+                    >
+                      Compare before you book
+                    </Link>
+                  )}
                   <a
                     href={`${siteConfig.promotedSites.autycloud.url}?utm_source=rentalfleetuae&utm_campaign=${emirate.slug}-${vehicle.slug}`}
                     className="block w-full bg-blue-600 text-white text-center px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
                   >
                     Manage Fleet with AutyCloud
                   </a>
+                  <Link
+                    href="/blog"
+                    className="block w-full bg-white border-2 border-blue-600 text-blue-700 text-center px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition"
+                  >
+                    Read UAE rental guides
+                  </Link>
                 </div>
               </div>
 

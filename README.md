@@ -35,14 +35,13 @@
 1. **Valuable Resource Hub**: Provides expert insights, tools, and resources for UAE rental businesses
 2. **Strategic Backlink Generator**: Creates high-quality, linkable content that naturally attracts backlinks while promoting:
    - **[AutyCloud](https://autycloud.com)** - Cloud-based fleet management software
-   - **[Adnan Rentals](https://adnanrentals.com)** - Premium car rental services in UAE
 
 ### Key Objectives
 
 - **Domain Authority**: Build DA 30+ within 6 months
 - **Backlink Generation**: Acquire 50+ high-quality backlinks
 - **Organic Traffic**: Drive 10,000+ monthly visitors
-- **Link Juice Distribution**: 70% internal links to promoted sites
+- **Link Juice Distribution**: Link strategically to relevant tools and partners
 - **White-Hat SEO**: Focus on value creation, not manipulation
 
 ---
@@ -213,7 +212,7 @@ Technical SEO implementation guide:
 
 ### Internal Linking Strategy
 
-- 70% of internal links point to promoted sites (autycloud.com, adnanrentals.com)
+- Prioritize contextual links to AutyCloud when discussing fleet software
 - 30% to authoritative external sources
 - 5-7 internal links per 1,000 words of content
 - Contextual, natural anchor text
@@ -316,6 +315,6 @@ For technical issues or questions:
 
 **Built with expertise in UAE rental industry and white-hat SEO strategies.**
 
-[Website](https://rentalfleetuae.com) • [AutyCloud](https://autycloud.com) • [Adnan Rentals](https://adnanrentals.com)
+[Website](https://rentalfleetuae.com) • [AutyCloud](https://autycloud.com)
 
 </div>

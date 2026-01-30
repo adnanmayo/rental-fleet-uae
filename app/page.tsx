@@ -35,17 +35,6 @@ export default function Home() {
                   </svg>
                   Explore Fleet Software
                 </a>
-                <a
-                  href={siteConfig.promotedSites.adnanRentals.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white border-2 border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-all group"
-                >
-                  <svg className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                  View Rental Services
-                </a>
               </div>
             </div>
             <div className="relative">
@@ -354,8 +343,8 @@ export default function Home() {
                   A
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900">Adnan Rentals</h3>
-                  <p className="text-sm text-gray-600">Dubai-based Car Rental</p>
+                  <h3 className="font-bold text-gray-900">Dubai Fleet Operator</h3>
+                  <p className="text-sm text-gray-600">Fleet manager, 120+ vehicles</p>
                 </div>
               </div>
               <p className="text-gray-700 mb-6 leading-relaxed italic">
@@ -366,12 +355,12 @@ export default function Home() {
                 {' '} transformed our operations. We reduced operational costs by 30% and increased customer satisfaction significantly.&quot;
               </p>
               <a
-                href={siteConfig.promotedSites.adnanRentals.url}
+                href={`${siteConfig.promotedSites.autycloud.url}/demo`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold group"
               >
-                Visit Adnan Rentals
+                Book a demo
                 <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>

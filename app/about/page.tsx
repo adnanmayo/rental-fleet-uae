@@ -47,11 +47,7 @@ export default function AboutPage() {
                 <a href={siteConfig.promotedSites.autycloud.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 underline">
                   AutyCloud
                 </a>
-                {' '}for fleet management technology and{' '}
-                <a href={siteConfig.promotedSites.adnanRentals.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 underline">
-                  Adnan Rentals
-                </a>
-                {' '}for exemplary service standards.
+                {' '}for fleet management technology.
               </p>
             </div>
             <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 text-white shadow-2xl">
@@ -288,7 +284,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-br from-blue-50 to-white border-2 border-blue-200 rounded-xl p-8">
               <div className="flex items-center mb-4">
                 <div className="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-2xl mr-4">
@@ -309,32 +305,6 @@ export default function AboutPage() {
                 className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold group"
               >
                 Explore AutyCloud
-                <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
-            </div>
-
-            <div className="bg-gradient-to-br from-amber-50 to-white border-2 border-amber-200 rounded-xl p-8">
-              <div className="flex items-center mb-4">
-                <div className="w-16 h-16 bg-amber-600 rounded-lg flex items-center justify-center text-white font-bold text-2xl mr-4">
-                  AR
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900">Adnan Rentals</h3>
-                  <p className="text-amber-600">Premium Car Rental Services</p>
-                </div>
-              </div>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Trusted car rental provider offering diverse vehicle options for personal and business use across the UAE. Exemplifies operational excellence and customer service standards.
-              </p>
-              <a
-                href={siteConfig.promotedSites.adnanRentals.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-amber-600 hover:text-amber-700 font-semibold group"
-              >
-                Visit Adnan Rentals
                 <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>

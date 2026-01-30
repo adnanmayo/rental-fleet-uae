@@ -301,7 +301,7 @@ export default function ResourcesPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl p-8 text-white shadow-xl">
               <h3 className="text-2xl font-bold mb-3">AutyCloud</h3>
               <p className="text-blue-100 mb-6 leading-relaxed">
@@ -324,34 +324,6 @@ export default function ResourcesPage() {
                 className="inline-flex items-center px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition"
               >
                 Explore AutyCloud
-                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-            </div>
-
-            <div className="bg-gradient-to-br from-amber-500 to-amber-700 rounded-xl p-8 text-white shadow-xl">
-              <h3 className="text-2xl font-bold mb-3">Need Vehicles?</h3>
-              <p className="text-amber-100 mb-6 leading-relaxed">
-                Adnan Rentals offers premium car rental services across the UAE with flexible terms for both personal and business needs.
-              </p>
-              <ul className="space-y-2 mb-6">
-                {['Diverse vehicle fleet', 'Competitive pricing', '24/7 customer support', 'Flexible rental terms'].map((feature, i) => (
-                  <li key={i} className="flex items-center text-sm">
-                    <svg className="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href={siteConfig.promotedSites.adnanRentals.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-white text-amber-700 font-semibold rounded-lg hover:bg-gray-100 transition"
-              >
-                Visit Adnan Rentals
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>

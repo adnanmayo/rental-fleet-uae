@@ -59,6 +59,34 @@ module.exports = {
       });
     }
 
+    // SEO keyword landing pages (programmatic)
+    // Keep this JSON-backed so postbuild stays simple.
+    const slugify = (text) =>
+      String(text || '')
+        .toLowerCase()
+        .replace(/[^\w\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/--+/g, '-')
+        .trim();
+
+    try {
+      const seoKeywordsRaw = fs.readFileSync(
+        path.join(process.cwd(), 'data', 'seo', 'keywords.json'),
+        'utf8'
+      );
+      const seoKeywordsJson = JSON.parse(seoKeywordsRaw);
+      const keywords = Array.isArray(seoKeywordsJson?.keywords) ? seoKeywordsJson.keywords : [];
+
+      // Pages
+      for (const kw of keywords) {
+        const slug = slugify(kw);
+        if (!slug) continue;
+        extra.push({ loc: `/blog/${slug}`, lastmod: now, changefreq: 'weekly', priority: 0.78 });
+      }
+    } catch {
+      // ignore if missing
+    }
+
     // Programmatic entities from JSON data (safe in postbuild)
     const dataDir = path.join(process.cwd(), 'data', 'entities');
     const readEntities = (file) => {
