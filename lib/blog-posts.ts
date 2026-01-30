@@ -1,40 +1,63 @@
-// Blog post data
-export interface BlogPost {
-  slug: string;
-  title: string;
+import type { BlogArticle } from "@/lib/database/blog-repository";
+import { getAllPublishedBlogArticles, getBlogArticleBySlug } from "@/lib/database/blog-repository";
+import { blogArticles as fallbackBlogArticles } from "@/data/blog-articles";
+import { calculateReadingTime, generateExcerpt } from "@/lib/seo-utils";
+
+export interface BlogPost extends BlogArticle {
   excerpt: string;
-  category: string;
   readTime: string;
 }
 
-export const blogPosts: BlogPost[] = [
-  {
-    slug: 'scale-uae-car-rental-business-2024',
-    title: 'How to Scale Your UAE Car Rental Business in 2024',
-    excerpt: 'Proven strategies for sustainable growth in the competitive UAE rental market',
-    category: 'Fleet Tech',
-    readTime: '8 min read'
-  },
-  {
-    slug: 'fleet-management-mistakes',
-    title: 'Top Mistakes in Fleet Management and How to Avoid Them',
-    excerpt: 'Learn from common pitfalls and optimize your fleet operations',
-    category: 'Rental Tips',
-    readTime: '6 min read'
-  },
-  {
-    slug: 'uae-driving-laws-rental-vehicles',
-    title: 'UAE Driving Laws for Rental Vehicles: Complete Guide',
-    excerpt: 'Stay compliant with the latest regulations and protect your business',
-    category: 'UAE Business',
-    readTime: '10 min read'
-  }
-];
-
-export function getAllPosts() {
-  return blogPosts;
+function stripLeadingH1(html: string): string {
+  return html.replace(/^\s*<h1\b[^>]*>[\s\S]*?<\/h1>\s*/i, "");
 }
 
-export function getPostBySlug(slug: string) {
-  return blogPosts.find(post => post.slug === slug);
+function stripEmbeddedToc(html: string): string {
+  // Remove a common embedded TOC block that starts with <h2 id="toc">... and a following <ul>...</ul>
+  return html.replace(
+    /<h2\b[^>]*id=["']toc["'][^>]*>[\s\S]*?<\/h2>\s*<ul>[\s\S]*?<\/ul>\s*/i,
+    ""
+  );
+}
+
+function stripHtml(html: string): string {
+  return html
+    .replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?>[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]*>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function normalizePost(post: BlogArticle): BlogPost {
+  const cleanedHtml = stripEmbeddedToc(stripLeadingH1(post.contentHtml));
+  const plainText = stripHtml(cleanedHtml);
+  const excerpt = post.excerpt?.trim() ? post.excerpt : generateExcerpt(plainText, 170);
+  const minutes = calculateReadingTime(plainText);
+  return {
+    ...post,
+    contentHtml: cleanedHtml,
+    excerpt,
+    readTime: `${minutes} min read`,
+  };
+}
+
+export async function getAllPosts(): Promise<BlogPost[]> {
+  try {
+    const articles = await getAllPublishedBlogArticles();
+    return articles.map(normalizePost);
+  } catch {
+    // Fallback for build/dev when DB isn't available yet (or schema not applied).
+    return fallbackBlogArticles.map(normalizePost);
+  }
+}
+
+export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
+  try {
+    const found = await getBlogArticleBySlug(slug);
+    return found ? normalizePost(found) : null;
+  } catch {
+    const found = fallbackBlogArticles.find((p) => p.slug === slug);
+    return found ? normalizePost(found) : null;
+  }
 }

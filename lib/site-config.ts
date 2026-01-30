@@ -73,6 +73,7 @@ export const siteConfig = {
     { name: "About", href: "/about" },
     { name: "Resources", href: "/resources" },
     { name: "Blog", href: "/blog" },
+    { name: "Compare", href: "/compare" },
     { name: "Tools", href: "/tools" },
     { name: "Contact", href: "/contact" }
   ],
@@ -203,8 +204,8 @@ export const linkBuildingKeywords = {
 export const backlinkAssets = {
   infographics: [
     {
-      title: "UAE Rental Business Statistics 2024",
-      slug: "uae-rental-statistics-2024",
+      title: "UAE Rental Business Statistics 2026",
+      slug: "uae-rental-statistics-2026",
       description: "Comprehensive infographic with market data",
       keywords: ["UAE rental market", "statistics", "industry data"]
     },

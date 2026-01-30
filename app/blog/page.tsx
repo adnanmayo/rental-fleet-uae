@@ -2,6 +2,7 @@ import Link from "next/link";
 import { generateMetadata as genMeta } from "@/lib/seo-utils";
 import { siteConfig } from "@/lib/site-config";
 import { getAllPosts } from "@/lib/blog-posts";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata = genMeta({
   title: "Blog - UAE Rental Business Insights & Tips",
@@ -10,11 +11,17 @@ export const metadata = genMeta({
   canonical: `${siteConfig.url}/blog`
 });
 
-export default function BlogPage() {
-  const posts = getAllPosts();
+export default async function BlogPage() {
+  const posts = await getAllPosts();
 
   return (
     <>
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Blog", href: "/blog" },
+        ]}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 via-white to-amber-50 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

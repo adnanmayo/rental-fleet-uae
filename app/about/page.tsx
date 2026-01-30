@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { generateMetadata } from '@/lib/seo-utils';
 import { siteConfig } from '@/lib/site-config';
 import BacklinkBadge from '@/components/BacklinkBadge';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = generateMetadata({
   title: 'About Us - UAE Rental Business Experts',
@@ -14,6 +15,7 @@ export const metadata: Metadata = generateMetadata({
 export default function AboutPage() {
   return (
     <>
+      <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'About', href: '/about' }]} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 via-white to-amber-50 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -205,7 +207,7 @@ export default function AboutPage() {
                     </div>
                     <div className="p-3 bg-white rounded-lg border border-gray-200">
                       <p className="text-sm text-gray-700 italic">
-                        &quot;Data from the <span className="text-blue-600 underline">2024 UAE Rental Market Report</span>...&quot;
+                        &quot;Data from the <span className="text-blue-600 underline">2026 UAE Rental Market Report</span>...&quot;
                       </p>
                     </div>
                   </div>
@@ -236,14 +238,14 @@ export default function AboutPage() {
               Cite-Worthy Statistics
             </h2>
             <p className="text-xl text-gray-600">
-              Original research data from our 2024 UAE Rental Market Report
+              Original research data from our 2026 UAE Rental Market Report
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { stat: '15.2B AED', label: 'UAE Rental Market Size', sublabel: '2024 Projection' },
-              { stat: '12.5%', label: 'Annual Growth Rate', sublabel: 'CAGR 2024-2028' },
+              { stat: '15.2B AED', label: 'UAE Rental Market Size', sublabel: '2026 Projection' },
+              { stat: '12.5%', label: 'Annual Growth Rate', sublabel: 'CAGR 2026-2030' },
               { stat: '62%', label: 'Technology Adoption', sublabel: 'Using Fleet Software' },
               { stat: '89%', label: 'Tourist Demand', sublabel: 'International Visitors' }
             ].map((item, index) => (
@@ -253,7 +255,7 @@ export default function AboutPage() {
                 <div className="text-sm text-gray-600">{item.sublabel}</div>
                 <div className="mt-4 pt-4 border-t border-gray-200">
                   <p className="text-xs text-gray-500">
-                    Source: <a href="/" className="text-blue-600 hover:underline">Rental Fleet UAE</a>
+                    Source: <Link href="/" className="text-blue-600 hover:underline">Rental Fleet UAE</Link>
                   </p>
                 </div>
               </div>
@@ -364,6 +366,26 @@ export default function AboutPage() {
             >
               {siteConfig.contact.email}
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Explore Next (Internal Links) */}
+      <section className="py-12 bg-white border-t">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/resources" className="bg-gray-50 border rounded-2xl p-6 hover:shadow-md transition">
+              <div className="font-bold text-gray-900 mb-1">Free resources</div>
+              <div className="text-sm text-gray-600">Reports, templates, and checklists →</div>
+            </Link>
+            <Link href="/blog" className="bg-gray-50 border rounded-2xl p-6 hover:shadow-md transition">
+              <div className="font-bold text-gray-900 mb-1">Blog</div>
+              <div className="text-sm text-gray-600">Guides and insights for UAE rental businesses →</div>
+            </Link>
+            <Link href="/compare" className="bg-gray-50 border rounded-2xl p-6 hover:shadow-md transition">
+              <div className="font-bold text-gray-900 mb-1">Compare vehicles</div>
+              <div className="text-sm text-gray-600">Side-by-side comparisons to shortlist faster →</div>
+            </Link>
           </div>
         </div>
       </section>

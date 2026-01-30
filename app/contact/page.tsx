@@ -1,7 +1,9 @@
 'use client';
 
 import { useState } from "react";
+import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -32,6 +34,7 @@ export default function ContactPage() {
 
   return (
     <>
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Contact", href: "/contact" }]} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 via-white to-amber-50 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -365,6 +368,26 @@ export default function ContactPage() {
             >
               View Rental Services
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Explore Next (Internal Links) */}
+      <section className="py-12 bg-white border-t">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/blog" className="bg-gray-50 border rounded-2xl p-6 hover:shadow-md transition">
+              <div className="font-bold text-gray-900 mb-1">Read guides</div>
+              <div className="text-sm text-gray-600">Fleet ops, pricing, compliance, and tech →</div>
+            </Link>
+            <Link href="/resources" className="bg-gray-50 border rounded-2xl p-6 hover:shadow-md transition">
+              <div className="font-bold text-gray-900 mb-1">Free resources</div>
+              <div className="text-sm text-gray-600">Reports, templates, checklists →</div>
+            </Link>
+            <Link href="/tools" className="bg-gray-50 border rounded-2xl p-6 hover:shadow-md transition">
+              <div className="font-bold text-gray-900 mb-1">Tools</div>
+              <div className="text-sm text-gray-600">ROI, pricing and planning calculators →</div>
+            </Link>
           </div>
         </div>
       </section>

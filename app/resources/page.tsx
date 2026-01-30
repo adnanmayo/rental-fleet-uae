@@ -4,6 +4,7 @@ import { generateMetadata } from '@/lib/seo-utils';
 import { siteConfig, backlinkAssets } from '@/lib/site-config';
 import DownloadButton from '@/components/DownloadButton';
 import SocialShare from '@/components/SocialShare';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Free Resources for UAE Rental Businesses',
@@ -15,6 +16,7 @@ export const metadata: Metadata = generateMetadata({
 export default function ResourcesPage() {
   return (
     <>
+      <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Resources', href: '/resources' }]} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 via-white to-amber-50 py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -45,14 +47,14 @@ export default function ResourcesPage() {
                   MOST POPULAR
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  2024 UAE Rental Market Report
+                  2026 UAE Rental Market Report
                 </h2>
                 <p className="text-blue-100 mb-6 leading-relaxed">
                   Our flagship 50-page comprehensive analysis of the UAE rental industry. Packed with original research, market data, growth projections, and actionable insights.
                 </p>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Market size and growth projections (2024-2028)',
+                    'Market size and growth projections (2026-2030)',
                     'Customer behavior and demand patterns',
                     'Technology adoption trends',
                     'Regulatory compliance checklist',
@@ -69,7 +71,7 @@ export default function ResourcesPage() {
                 </ul>
                 <DownloadButton
                   title="Download Free Report"
-                  file="uae-rental-market-report-2024.pdf"
+                  file="uae-rental-market-report-2026.pdf"
                   description="50-page PDF • 12.5 MB"
                   className="bg-white text-blue-600 hover:bg-gray-100"
                 />
@@ -385,6 +387,26 @@ export default function ResourcesPage() {
           <p className="text-xs text-gray-500 mt-4">
             No spam. Unsubscribe anytime. See our <Link href="/privacy" className="text-blue-600 hover:underline">Privacy Policy</Link>.
           </p>
+        </div>
+      </section>
+
+      {/* Explore Next (Internal Links) */}
+      <section className="py-12 bg-white border-t">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/blog" className="bg-gray-50 border rounded-2xl p-6 hover:shadow-md transition">
+              <div className="font-bold text-gray-900 mb-1">Read guides</div>
+              <div className="text-sm text-gray-600">Practical advice for UAE rental operators →</div>
+            </Link>
+            <Link href="/compare" className="bg-gray-50 border rounded-2xl p-6 hover:shadow-md transition">
+              <div className="font-bold text-gray-900 mb-1">Compare vehicles</div>
+              <div className="text-sm text-gray-600">Shortlist faster with side-by-side comparisons →</div>
+            </Link>
+            <Link href="/tools" className="bg-gray-50 border rounded-2xl p-6 hover:shadow-md transition">
+              <div className="font-bold text-gray-900 mb-1">Use free tools</div>
+              <div className="text-sm text-gray-600">Calculators, templates, and planning helpers →</div>
+            </Link>
+          </div>
         </div>
       </section>
     </>

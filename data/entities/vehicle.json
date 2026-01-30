@@ -1,0 +1,900 @@
+{
+  "entities": [
+    {
+      "id": "sedan",
+      "type": "vehicle",
+      "slug": "sedan",
+      "name": "Sedan",
+      "displayName": "Sedan",
+      "metadata": {
+        "seats": 5,
+        "rating": 4.7,
+        "priceRange": {
+          "min": 80,
+          "max": 300,
+          "currency": "AED"
+        },
+        "stats": {
+          "averageFleetSize": 3500,
+          "popularityRank": 1,
+          "fuelEfficiency": "15-20 km/L"
+        },
+        "features": ["Air Conditioning", "Bluetooth", "Cruise Control", "Power Windows", "ABS"],
+        "tags": ["comfortable", "fuel-efficient", "business", "daily-use", "family"]
+      },
+      "content": {
+        "description": "Sedans are the most popular rental choice in UAE, offering perfect balance of comfort, efficiency, and affordability for business and leisure travel.",
+        "longDescription": "Our sedan fleet represents the ideal choice for UAE travelers seeking comfortable, reliable transportation. From compact sedans perfect for city driving to executive models ideal for business meetings, our selection caters to every need. With excellent fuel efficiency and modern amenities, sedans provide the best value for daily, weekly, and monthly rentals across Dubai, Abu Dhabi, and all UAE emirates.",
+        "benefits": [
+          "Excellent fuel economy - save up to 40% on fuel costs vs SUVs",
+          "Easy parking in tight Dubai mall and office spaces",
+          "Comfortable for 4-5 passengers with ample luggage space",
+          "Professional appearance suitable for business meetings",
+          "Lower rental rates compared to luxury and SUV categories"
+        ],
+        "features": [
+          "Modern safety systems including ABS and airbags",
+          "Climate control air conditioning for UAE heat",
+          "Bluetooth connectivity and USB charging ports",
+          "Cruise control for highway comfort on Dubai-Abu Dhabi route",
+          "Spacious trunk accommodating 3-4 large suitcases"
+        ],
+        "highlights": [
+          "Most fuel-efficient option - 15-20 km per liter",
+          "Starting from 80 AED per day for economy sedans",
+          "Popular models: Toyota Camry, Honda Accord, Nissan Altima",
+          "Ideal for 70% of UAE rental customers"
+        ],
+        "faqs": [
+          {
+            "question": "What's the difference between economy and executive sedans?",
+            "answer": "Economy sedans (Nissan Sunny, Toyota Yaris) start at 80-120 AED/day and are perfect for budget travelers. Executive sedans (Toyota Camry, Honda Accord) cost 150-250 AED/day and offer more space, power, and premium features for business travelers."
+          },
+          {
+            "question": "Can a sedan handle UAE desert trips?",
+            "answer": "Sedans are excellent for city driving and highways but not recommended for off-road desert adventures. For desert safaris, we recommend booking our SUV or 4x4 options with higher ground clearance."
+          },
+          {
+            "question": "How many suitcases fit in a sedan trunk?",
+            "answer": "Standard sedans accommodate 3-4 large suitcases plus hand luggage. This makes them perfect for couples or small families traveling to UAE. For larger groups, consider our SUV or van options."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "alternative",
+          "entityId": "compact",
+          "entityType": "vehicle",
+          "weight": 8
+        },
+        {
+          "type": "upgrade",
+          "entityId": "luxury",
+          "entityType": "vehicle",
+          "weight": 7
+        },
+        {
+          "type": "alternative",
+          "entityId": "suv",
+          "entityType": "vehicle",
+          "weight": 6
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} Car Rental in {emirate} - From 80 AED/Day | Rental Fleet UAE",
+        "descriptionTemplate": "Rent a {name} in {emirate}, UAE from 80 AED/day. Toyota Camry, Honda Accord & more. Fuel-efficient, comfortable sedans with 24/7 support. Book your {emirate} sedan rental now!",
+        "keywords": ["sedan rental uae", "rent sedan dubai", "toyota camry rental", "honda accord hire", "executive sedan rental", "business car rental uae"],
+        "h1Template": "{name} Rental in {emirate}, UAE",
+        "schemaType": "Product"
+      },
+      "priority": 10
+    },
+    {
+      "id": "suv",
+      "type": "vehicle",
+      "slug": "suv",
+      "name": "SUV",
+      "displayName": "SUV",
+      "metadata": {
+        "seats": 7,
+        "rating": 4.8,
+        "priceRange": {
+          "min": 150,
+          "max": 600,
+          "currency": "AED"
+        },
+        "stats": {
+          "averageFleetSize": 2800,
+          "popularityRank": 2,
+          "fuelEfficiency": "10-14 km/L"
+        },
+        "features": ["4WD Capability", "7 Seats", "Premium Sound", "Panoramic Sunroof", "Advanced Safety"],
+        "tags": ["spacious", "family", "off-road", "premium", "versatile"]
+      },
+      "content": {
+        "description": "SUVs offer superior space, comfort, and versatility for UAE families and adventure seekers, perfect for both city driving and desert exploration.",
+        "longDescription": "Experience the ultimate in comfort and capability with our premium SUV fleet. Designed for UAE's diverse terrain, our SUVs handle everything from Sheikh Zayed Road to desert dunes with ease. With seating for up to 7 passengers and generous cargo space, SUVs are the preferred choice for families, group travelers, and those seeking adventure. Popular models include Toyota Fortuner, Nissan Patrol, and Mitsubishi Pajero - all equipped with modern amenities and powerful air conditioning systems essential for UAE climate.",
+        "benefits": [
+          "Spacious 7-seat configuration perfect for families and groups",
+          "4WD capability for desert safaris and off-road adventures",
+          "Higher driving position provides better road visibility",
+          "Premium comfort with leather seats and climate zones",
+          "Ample cargo space for shopping, luggage, and sports equipment"
+        ],
+        "features": [
+          "Four-wheel drive system for desert and off-road capability",
+          "Third-row seating accommodating up to 7 passengers",
+          "Advanced safety features including stability control",
+          "Powerful air conditioning with multiple climate zones",
+          "Premium infotainment with Apple CarPlay and Android Auto"
+        ],
+        "highlights": [
+          "Ideal for families of 5-7 people with luggage",
+          "Starting from 150 AED/day for standard SUVs",
+          "Popular models: Toyota Fortuner, Nissan Patrol, Prado",
+          "Perfect for desert safari adventures in Dubai and Abu Dhabi"
+        ],
+        "faqs": [
+          {
+            "question": "Do I need an SUV for desert driving in UAE?",
+            "answer": "Yes, if you plan to explore desert areas, an SUV with 4WD is essential. Our SUVs like the Toyota Fortuner and Nissan Patrol are equipped with proper ground clearance and four-wheel drive systems needed for sand driving. However, guided desert tours provide their own vehicles."
+          },
+          {
+            "question": "What's the fuel consumption difference between sedan and SUV?",
+            "answer": "SUVs consume approximately 10-14 km/L compared to sedans' 15-20 km/L. On a Dubai-Abu Dhabi trip (150km), an SUV uses about 3-4 liters more fuel. However, the extra space and comfort often justify the cost for families and groups."
+          },
+          {
+            "question": "Can I fit 7 adults comfortably in a 7-seater SUV?",
+            "answer": "7-seater SUVs comfortably fit 5-6 adults, with the third row best suited for children or short trips. For 7 adults with luggage, we recommend our van category for optimal comfort during your UAE journey."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "alternative",
+          "entityId": "sedan",
+          "entityType": "vehicle",
+          "weight": 7
+        },
+        {
+          "type": "upgrade",
+          "entityId": "luxury",
+          "entityType": "vehicle",
+          "weight": 8
+        },
+        {
+          "type": "alternative",
+          "entityId": "van",
+          "entityType": "vehicle",
+          "weight": 6
+        },
+        {
+          "type": "related",
+          "entityId": "pickup",
+          "entityType": "vehicle",
+          "weight": 5
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} Rental {emirate} - 7-Seater 4WD from 150 AED | Rental Fleet UAE",
+        "descriptionTemplate": "Rent an {name} in {emirate}, UAE. Toyota Fortuner, Nissan Patrol & 7-seater 4WD options. Perfect for families and desert adventures. Book your {emirate} SUV rental today!",
+        "keywords": ["suv rental uae", "7 seater rental dubai", "4x4 rental uae", "toyota fortuner rental", "nissan patrol hire", "family suv rental"],
+        "h1Template": "Premium {name} Rental in {emirate}",
+        "schemaType": "Product"
+      },
+      "priority": 9
+    },
+    {
+      "id": "luxury",
+      "type": "vehicle",
+      "slug": "luxury",
+      "name": "Luxury",
+      "displayName": "Luxury Car",
+      "metadata": {
+        "seats": 5,
+        "rating": 4.9,
+        "priceRange": {
+          "min": 400,
+          "max": 3000,
+          "currency": "AED"
+        },
+        "stats": {
+          "averageFleetSize": 800,
+          "popularityRank": 3,
+          "fuelEfficiency": "8-12 km/L"
+        },
+        "features": ["Premium Leather", "Advanced Tech", "Superior Performance", "Massage Seats", "Premium Audio"],
+        "tags": ["prestigious", "executive", "business", "high-end", "premium"]
+      },
+      "content": {
+        "description": "Luxury vehicles represent the pinnacle of automotive excellence, offering unmatched comfort, technology, and prestige for discerning UAE travelers.",
+        "longDescription": "Elevate your UAE experience with our prestigious luxury fleet featuring Mercedes-Benz, BMW, Audi, and exotic brands. Perfect for business executives, special occasions, and those who demand the finest, our luxury vehicles combine cutting-edge technology with unparalleled comfort. From the Mercedes S-Class to the BMW 7 Series, each vehicle is meticulously maintained and equipped with premium features. Whether attending a business meeting in Dubai's DIFC or making a grand entrance at a Palm Jumeirah hotel, our luxury cars ensure you arrive in style.",
+        "benefits": [
+          "Make powerful business impressions with prestigious brands",
+          "Cutting-edge technology including autonomous driving features",
+          "Supreme comfort with massage seats and premium materials",
+          "Exclusive VIP concierge services and priority support",
+          "Perfect for weddings, corporate events, and special occasions"
+        ],
+        "features": [
+          "Premium leather interiors with heating and ventilation",
+          "Advanced driver assistance and semi-autonomous features",
+          "Burmester or Bang & Olufsen premium sound systems",
+          "Heads-up display and digital instrument clusters",
+          "Ambient lighting with customizable color schemes"
+        ],
+        "highlights": [
+          "Fleet includes Mercedes S-Class, BMW 7 Series, Audi A8",
+          "Starting from 400 AED/day for luxury sedans",
+          "Exotic options: Range Rover, Bentley, Rolls-Royce available",
+          "Preferred by 15% of business travelers in UAE"
+        ],
+        "faqs": [
+          {
+            "question": "What luxury car brands are available in UAE?",
+            "answer": "Our luxury fleet includes Mercedes-Benz (S-Class, E-Class), BMW (7 Series, 5 Series), Audi (A8, A6), Range Rover, Jaguar, and exotic options like Bentley, Maserati, and Rolls-Royce. Availability varies by location and season, so book early for specific models."
+          },
+          {
+            "question": "Do luxury rentals include chauffeur service?",
+            "answer": "Chauffeur service is available as an add-on for all luxury vehicles at 150-250 AED per day plus hourly rates. This is popular for airport transfers, business meetings, and special events where you want to focus on work or relaxation."
+          },
+          {
+            "question": "What's the insurance coverage for luxury car rentals?",
+            "answer": "Luxury rentals include comprehensive insurance with a higher security deposit (5,000-15,000 AED). This covers collision damage waiver and third-party liability. The deposit is fully refundable upon safe return of the vehicle."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "downgrade",
+          "entityId": "sedan",
+          "entityType": "vehicle",
+          "weight": 6
+        },
+        {
+          "type": "alternative",
+          "entityId": "sports",
+          "entityType": "vehicle",
+          "weight": 7
+        },
+        {
+          "type": "related",
+          "entityId": "suv",
+          "entityType": "vehicle",
+          "weight": 5
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} Car Rental {emirate} - Mercedes, BMW, Audi | Rental Fleet UAE",
+        "descriptionTemplate": "Rent luxury cars in {emirate}, UAE. Mercedes S-Class, BMW 7 Series, Audi A8 from 400 AED/day. VIP service, premium fleet. Book your {emirate} luxury rental now!",
+        "keywords": ["luxury car rental uae", "mercedes rental dubai", "bmw rental abu dhabi", "exotic car hire", "premium car rental", "executive vehicle rental"],
+        "h1Template": "Premium {name} Car Rental in {emirate}",
+        "schemaType": "Product"
+      },
+      "priority": 8
+    },
+    {
+      "id": "economy",
+      "type": "vehicle",
+      "slug": "economy",
+      "name": "Economy",
+      "displayName": "Economy Car",
+      "metadata": {
+        "seats": 5,
+        "rating": 4.5,
+        "priceRange": {
+          "min": 60,
+          "max": 120,
+          "currency": "AED"
+        },
+        "stats": {
+          "averageFleetSize": 4200,
+          "popularityRank": 2,
+          "fuelEfficiency": "18-25 km/L"
+        },
+        "features": ["Fuel Efficient", "Easy Parking", "Low Cost", "Reliable", "Modern Safety"],
+        "tags": ["budget", "affordable", "efficient", "practical", "value"]
+      },
+      "content": {
+        "description": "Economy cars provide the most affordable and fuel-efficient transportation solution in UAE, perfect for budget-conscious travelers and solo explorers.",
+        "longDescription": "Maximize your travel budget with our economy fleet, featuring reliable brands like Nissan Sunny, Mitsubishi Attrage, and Toyota Yaris. These vehicles deliver exceptional value without compromising on essential features - all include air conditioning (crucial for UAE climate), modern safety features, and comfortable interiors. Ideal for solo travelers, couples, and business travelers seeking cost-effective transport between emirates. With fuel efficiency up to 25 km/L, economy cars can save you hundreds of dirhams on longer UAE road trips.",
+        "benefits": [
+          "Lowest rental rates starting from just 60 AED per day",
+          "Exceptional fuel economy - up to 25 km per liter",
+          "Compact size makes parking easy in crowded Dubai areas",
+          "Full insurance and roadside assistance included",
+          "Perfect for solo travelers and budget-conscious tourists"
+        ],
+        "features": [
+          "Air conditioning with effective cooling for UAE heat",
+          "Modern safety features including airbags and ABS",
+          "Bluetooth audio and USB charging capabilities",
+          "Adequate trunk space for 2-3 suitcases",
+          "Easy-to-drive automatic transmission"
+        ],
+        "highlights": [
+          "Most fuel-efficient option - save up to 50% on fuel costs",
+          "Starting from 60 AED/day - lowest rates in UAE",
+          "Popular models: Nissan Sunny, Mitsubishi Attrage, Kia Pegas",
+          "Ideal for daily city commutes and emirate-to-emirate travel"
+        ],
+        "faqs": [
+          {
+            "question": "Are economy cars suitable for UAE roads and weather?",
+            "answer": "Absolutely! All our economy cars feature powerful air conditioning, modern safety features, and are well-maintained. They handle UAE highways perfectly and are ideal for city driving. The only limitation is off-road capability - stick to paved roads."
+          },
+          {
+            "question": "How much can I save with an economy car vs standard sedan?",
+            "answer": "Economy cars save you 20-30 AED per day on rental costs plus 30-40% on fuel. For a week-long rental, that's approximately 300-400 AED in total savings - enough for extra dining or entertainment in Dubai!"
+          },
+          {
+            "question": "Can economy cars handle long drives like Dubai to Abu Dhabi?",
+            "answer": "Yes, economy cars are perfect for intercity travel. The Dubai-Abu Dhabi route (150km) takes about 90 minutes and costs only 25-30 AED in fuel with an economy car, compared to 40-50 AED with larger vehicles."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "upgrade",
+          "entityId": "sedan",
+          "entityType": "vehicle",
+          "weight": 8
+        },
+        {
+          "type": "alternative",
+          "entityId": "compact",
+          "entityType": "vehicle",
+          "weight": 9
+        },
+        {
+          "type": "related",
+          "entityId": "electric",
+          "entityType": "vehicle",
+          "weight": 5
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} Car Rental {emirate} - From 60 AED/Day | Rental Fleet UAE",
+        "descriptionTemplate": "Cheap car rental in {emirate}, UAE from 60 AED/day. Economy cars with A/C, insurance included. Budget-friendly Nissan, Mitsubishi & Toyota. Book {emirate} economy rental!",
+        "keywords": ["cheap car rental uae", "budget car rental dubai", "economy car hire", "affordable rental uae", "low cost car rental", "nissan sunny rental"],
+        "h1Template": "Budget {name} Car Rental in {emirate}",
+        "schemaType": "Product"
+      },
+      "priority": 9
+    },
+    {
+      "id": "van",
+      "type": "vehicle",
+      "slug": "van",
+      "name": "Van",
+      "displayName": "Van / Minibus",
+      "metadata": {
+        "seats": 12,
+        "rating": 4.6,
+        "priceRange": {
+          "min": 200,
+          "max": 500,
+          "currency": "AED"
+        },
+        "stats": {
+          "averageFleetSize": 600,
+          "popularityRank": 6,
+          "fuelEfficiency": "9-12 km/L"
+        },
+        "features": ["8-15 Seats", "Large Cargo", "Dual A/C", "Comfortable Seating", "USB Ports"],
+        "tags": ["group", "family", "spacious", "events", "transport"]
+      },
+      "content": {
+        "description": "Vans and minibuses offer the ultimate group transportation solution in UAE, ideal for large families, corporate teams, and event attendees.",
+        "longDescription": "Transport your entire group in comfort with our spacious van fleet, featuring models like Toyota Hiace, Nissan Urvan, and Mercedes Sprinter. Perfect for family reunions, corporate events, airport transfers, and group tours across UAE emirates. With seating for 8-15 passengers and ample luggage capacity, vans eliminate the need for multiple vehicles. All vans feature dual air conditioning systems (essential for UAE climate), comfortable seating, and modern amenities. Popular for weddings, corporate shuttles, and large family vacations.",
+        "benefits": [
+          "Transport 8-15 passengers in a single vehicle",
+          "Massive luggage capacity for group travel needs",
+          "Cost-effective compared to multiple car rentals",
+          "Dual A/C systems ensure everyone stays cool",
+          "Perfect for airport transfers with large groups"
+        ],
+        "features": [
+          "Spacious seating for 8, 12, or 15 passengers",
+          "Dual air conditioning with rear climate control",
+          "Large cargo area accommodating 10+ suitcases",
+          "USB charging ports throughout the cabin",
+          "Professional driver options available"
+        ],
+        "highlights": [
+          "Most economical for groups of 8+ people",
+          "Starting from 200 AED/day for 12-seater vans",
+          "Popular models: Toyota Hiace, Nissan Urvan, Coaster",
+          "Ideal for weddings, corporate events, family tours"
+        ],
+        "faqs": [
+          {
+            "question": "Do van rentals include a driver in UAE?",
+            "answer": "Vans can be rented self-drive or with a professional driver. Driver service costs an additional 150-200 AED per day plus hourly charges. Many customers choose driver service for airport transfers and corporate events."
+          },
+          {
+            "question": "How many suitcases fit in a 12-seater van?",
+            "answer": "A 12-seater van comfortably accommodates 10-12 large suitcases when all seats are occupied, or up to 20 suitcases with reduced passenger capacity. Perfect for airport transfers or group tours with luggage."
+          },
+          {
+            "question": "What's required to drive a van in UAE?",
+            "answer": "A standard car driving license is sufficient for vans up to 15 seats. Larger vehicles may require a special license. All our rental vans are automatic transmission for easy driving on UAE roads."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "alternative",
+          "entityId": "suv",
+          "entityType": "vehicle",
+          "weight": 6
+        },
+        {
+          "type": "downgrade",
+          "entityId": "sedan",
+          "entityType": "vehicle",
+          "weight": 4
+        },
+        {
+          "type": "related",
+          "entityId": "pickup",
+          "entityType": "vehicle",
+          "weight": 5
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} Rental {emirate} - 12-15 Seater from 200 AED | Rental Fleet UAE",
+        "descriptionTemplate": "Rent a van in {emirate}, UAE for groups and families. Toyota Hiace, 12-15 seater minibus from 200 AED/day. Perfect for events and tours. Book {emirate} van rental!",
+        "keywords": ["van rental uae", "minibus hire dubai", "12 seater rental", "group transport uae", "toyota hiace rental", "passenger van hire"],
+        "h1Template": "{name} and Minibus Rental in {emirate}",
+        "schemaType": "Product"
+      },
+      "priority": 6
+    },
+    {
+      "id": "sports",
+      "type": "vehicle",
+      "slug": "sports",
+      "name": "Sports",
+      "displayName": "Sports Car",
+      "metadata": {
+        "seats": 4,
+        "rating": 4.9,
+        "priceRange": {
+          "min": 800,
+          "max": 5000,
+          "currency": "AED"
+        },
+        "stats": {
+          "averageFleetSize": 350,
+          "popularityRank": 7,
+          "fuelEfficiency": "7-10 km/L"
+        },
+        "features": ["High Performance", "Exotic Design", "Premium Interior", "Advanced Tech", "Prestige"],
+        "tags": ["exotic", "performance", "luxury", "prestigious", "experience"]
+      },
+      "content": {
+        "description": "Sports and exotic cars deliver thrilling performance and head-turning style, perfect for special occasions and unforgettable UAE driving experiences.",
+        "longDescription": "Experience automotive excellence with our exotic sports car collection featuring Ferrari, Lamborghini, Porsche, McLaren, and other prestigious brands. Dubai and Abu Dhabi provide the perfect backdrop for these magnificent machines - from cruising the Palm Jumeirah to accelerating on Sheikh Zayed Road. Our sports cars aren't just transportation; they're experiences that create lasting memories. Popular for weddings, anniversaries, business celebrations, and luxury tourism. Each vehicle is maintained to showroom condition and comes with comprehensive insurance and 24/7 concierge support.",
+        "benefits": [
+          "Drive world-famous supercars at fraction of ownership cost",
+          "Create unforgettable memories and photo opportunities",
+          "Perfect for special occasions, weddings, and celebrations",
+          "Experience cutting-edge automotive technology and performance",
+          "VIP treatment with exclusive concierge services"
+        ],
+        "features": [
+          "Powerful engines delivering 400-700+ horsepower",
+          "Exotic Italian, German, and British engineering",
+          "Premium leather and carbon fiber interiors",
+          "Advanced performance and safety systems",
+          "Complimentary delivery to luxury hotels and locations"
+        ],
+        "highlights": [
+          "Fleet includes Ferrari, Lamborghini, Porsche, McLaren",
+          "Starting from 800 AED/day for premium sports cars",
+          "Popular for weddings, photography, and special events",
+          "4-hour and daily rental packages available"
+        ],
+        "faqs": [
+          {
+            "question": "What sports cars are available for rent in Dubai?",
+            "answer": "Our exotic fleet includes Ferrari 488, Lamborghini Huracan, Porsche 911, McLaren 570S, Audi R8, Mercedes AMG GT, and more. Availability varies by season - summer months offer better rates. Book 2-4 weeks in advance for specific models."
+          },
+          {
+            "question": "Can tourists rent sports cars in UAE?",
+            "answer": "Yes! Tourists need a valid passport, tourist visa, home country license, and International Driving Permit. Minimum age is typically 25 years. A security deposit of 5,000-20,000 AED is required depending on the vehicle."
+          },
+          {
+            "question": "Are there any driving restrictions for exotic cars?",
+            "answer": "Sports cars are restricted to paved roads only - no off-roading. Speed limits apply as normal (120 km/h on highways). We recommend avoiding peak traffic hours to fully enjoy the driving experience on Dubai's excellent road network."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "alternative",
+          "entityId": "luxury",
+          "entityType": "vehicle",
+          "weight": 8
+        },
+        {
+          "type": "alternative",
+          "entityId": "convertible",
+          "entityType": "vehicle",
+          "weight": 7
+        },
+        {
+          "type": "downgrade",
+          "entityId": "sedan",
+          "entityType": "vehicle",
+          "weight": 4
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} Car Rental {emirate} - Ferrari, Lamborghini & Exotic Cars",
+        "descriptionTemplate": "Rent exotic sports cars in {emirate}, UAE. Ferrari, Lamborghini, Porsche from 800 AED/day. Perfect for weddings and special occasions. Book {emirate} sports car now!",
+        "keywords": ["sports car rental dubai", "ferrari rental uae", "lamborghini hire dubai", "exotic car rental", "supercar rental abu dhabi", "luxury sports car"],
+        "h1Template": "Exotic {name} Car Rental in {emirate}",
+        "schemaType": "Product"
+      },
+      "priority": 7
+    },
+    {
+      "id": "compact",
+      "type": "vehicle",
+      "slug": "compact",
+      "name": "Compact",
+      "displayName": "Compact Car",
+      "metadata": {
+        "seats": 5,
+        "rating": 4.6,
+        "priceRange": {
+          "min": 70,
+          "max": 140,
+          "currency": "AED"
+        },
+        "stats": {
+          "averageFleetSize": 2200,
+          "popularityRank": 4,
+          "fuelEfficiency": "16-22 km/L"
+        },
+        "features": ["Maneuverable", "Efficient", "Modern Tech", "Easy Parking", "Affordable"],
+        "tags": ["practical", "city-car", "efficient", "modern", "convenient"]
+      },
+      "content": {
+        "description": "Compact cars combine economy pricing with modern features and easy maneuverability, ideal for city navigation and short trips across UAE.",
+        "longDescription": "Navigate Dubai's busy streets with confidence in our compact car fleet, featuring modern models like Honda City, Hyundai Accent, and Mazda 3. These vehicles strike the perfect balance between affordability and features, offering more space and power than economy cars while maintaining excellent fuel efficiency. Compact cars are popular among UAE residents for daily commutes and tourists who want comfort without the bulk of larger vehicles. Perfect for couples and solo travelers exploring city attractions, shopping malls, and beach destinations.",
+        "benefits": [
+          "Easy parking in tight spaces at Dubai malls and hotels",
+          "Better features than economy cars at affordable rates",
+          "Excellent fuel efficiency saves money on longer trips",
+          "Comfortable for 2-4 passengers with modern amenities",
+          "Nimble handling perfect for city traffic navigation"
+        ],
+        "features": [
+          "Modern infotainment with touchscreen displays",
+          "Effective air conditioning for UAE summer heat",
+          "Fuel-efficient engines with smooth automatic transmission",
+          "Advanced safety features including multiple airbags",
+          "Comfortable seats with quality interior materials"
+        ],
+        "highlights": [
+          "Sweet spot between economy and sedan categories",
+          "Starting from 70 AED/day with insurance included",
+          "Popular models: Honda City, Hyundai Accent, Mazda 3",
+          "Ideal for city exploration and emirate-hopping"
+        ],
+        "faqs": [
+          {
+            "question": "What's the difference between compact and economy cars?",
+            "answer": "Compact cars offer more interior space, better features (touchscreen, better audio), and slightly more power than economy cars. The price difference is minimal (10-20 AED/day) but compacts provide noticeably better comfort for longer drives."
+          },
+          {
+            "question": "Can compact cars fit in Dubai's small parking spaces?",
+            "answer": "Yes! Compact cars are specifically designed for urban environments. They're easier to park than sedans and SUVs, making them perfect for Dubai Mall, Marina Mall, and beach parking areas where space is limited."
+          },
+          {
+            "question": "Are compact cars good for highway driving?",
+            "answer": "Absolutely! Compact cars handle UAE highways excellently. They have sufficient power for 120 km/h cruising and modern safety features. The Dubai-Abu Dhabi route is very comfortable in a compact car with better fuel economy than larger vehicles."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "alternative",
+          "entityId": "economy",
+          "entityType": "vehicle",
+          "weight": 9
+        },
+        {
+          "type": "upgrade",
+          "entityId": "sedan",
+          "entityType": "vehicle",
+          "weight": 7
+        },
+        {
+          "type": "related",
+          "entityId": "electric",
+          "entityType": "vehicle",
+          "weight": 6
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} Car Rental {emirate} - Modern City Cars from 70 AED",
+        "descriptionTemplate": "Rent compact cars in {emirate}, UAE from 70 AED/day. Honda City, Hyundai Accent with modern features. Perfect for city driving. Book {emirate} compact rental!",
+        "keywords": ["compact car rental uae", "city car hire dubai", "honda city rental", "small car rental", "urban car hire", "mazda 3 rental"],
+        "h1Template": "{name} Car Rental in {emirate}",
+        "schemaType": "Product"
+      },
+      "priority": 7
+    },
+    {
+      "id": "electric",
+      "type": "vehicle",
+      "slug": "electric",
+      "name": "Electric",
+      "displayName": "Electric Vehicle (EV)",
+      "metadata": {
+        "seats": 5,
+        "rating": 4.7,
+        "priceRange": {
+          "min": 180,
+          "max": 800,
+          "currency": "AED"
+        },
+        "stats": {
+          "averageFleetSize": 450,
+          "popularityRank": 8,
+          "fuelEfficiency": "150-200 km per charge"
+        },
+        "features": ["Zero Emissions", "Instant Torque", "Quiet Operation", "Advanced Tech", "Free Charging"],
+        "tags": ["eco-friendly", "modern", "technology", "sustainable", "innovative"]
+      },
+      "content": {
+        "description": "Electric vehicles offer sustainable, quiet, and technologically advanced transportation with zero emissions and minimal operating costs in UAE.",
+        "longDescription": "Experience the future of mobility with our electric vehicle fleet, featuring Tesla Model 3, BMW i4, and other cutting-edge EVs. UAE's commitment to sustainability is reflected in expanding EV infrastructure, with over 300 charging stations across Dubai and Abu Dhabi. Electric vehicles deliver instant acceleration, whisper-quiet operation, and advanced technology while eliminating fuel costs entirely. Perfect for environmentally conscious travelers and technology enthusiasts. Our EVs come with complimentary charging access at major malls, hotels, and DEWA stations throughout UAE.",
+        "benefits": [
+          "Zero fuel costs - save 100% on petrol expenses",
+          "Instant acceleration and smooth, quiet driving experience",
+          "Access to 300+ free charging stations across UAE",
+          "Cutting-edge technology including autopilot features",
+          "Environmental benefits with zero emissions driving"
+        ],
+        "features": [
+          "Advanced autopilot and driver assistance systems",
+          "Large touchscreen infotainment with navigation",
+          "150-400 km range depending on model",
+          "Fast charging capability (80% in 30-45 minutes)",
+          "Premium interior with minimalist design"
+        ],
+        "highlights": [
+          "No fuel costs - charge free at many UAE locations",
+          "Starting from 180 AED/day for standard EVs",
+          "Popular models: Tesla Model 3, BMW i4, Nissan Leaf",
+          "Over 300 charging stations in Dubai and Abu Dhabi"
+        ],
+        "faqs": [
+          {
+            "question": "Where can I charge electric cars in UAE?",
+            "answer": "UAE has 300+ charging stations at Dubai Mall, Mall of Emirates, major hotels, DEWA stations, and parking facilities. Fast chargers provide 80% charge in 30-45 minutes. We provide a charging card and app access with your rental."
+          },
+          {
+            "question": "What's the range of electric cars in UAE?",
+            "answer": "Our EVs range from 150km (Nissan Leaf) to 400km (Tesla Model 3 Long Range) per charge. Dubai to Abu Dhabi is 150km round trip - easily achievable. Air conditioning usage reduces range by approximately 15-20%."
+          },
+          {
+            "question": "Are electric cars worth it for tourists in UAE?",
+            "answer": "Yes! With free charging at malls and hotels, you save 200-300 AED weekly on fuel. EVs are perfect for city exploration. However, if you plan extensive highway driving or desert trips, consider charging station locations in your itinerary."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "alternative",
+          "entityId": "sedan",
+          "entityType": "vehicle",
+          "weight": 6
+        },
+        {
+          "type": "alternative",
+          "entityId": "luxury",
+          "entityType": "vehicle",
+          "weight": 7
+        },
+        {
+          "type": "related",
+          "entityId": "compact",
+          "entityType": "vehicle",
+          "weight": 5
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} Car Rental {emirate} - Tesla & EV from 180 AED | Zero Fuel Costs",
+        "descriptionTemplate": "Rent electric cars in {emirate}, UAE. Tesla Model 3, BMW i4 from 180 AED/day. Free charging, zero emissions. Book your {emirate} EV rental today!",
+        "keywords": ["electric car rental uae", "tesla rental dubai", "ev hire uae", "electric vehicle rental", "sustainable car rental", "zero emission car"],
+        "h1Template": "{name} Vehicle Rental in {emirate}",
+        "schemaType": "Product"
+      },
+      "priority": 6
+    },
+    {
+      "id": "convertible",
+      "type": "vehicle",
+      "slug": "convertible",
+      "name": "Convertible",
+      "displayName": "Convertible",
+      "metadata": {
+        "seats": 4,
+        "rating": 4.8,
+        "priceRange": {
+          "min": 300,
+          "max": 2000,
+          "currency": "AED"
+        },
+        "stats": {
+          "averageFleetSize": 280,
+          "popularityRank": 9,
+          "fuelEfficiency": "10-14 km/L"
+        },
+        "features": ["Retractable Roof", "Premium Style", "Open-Air Driving", "Luxury Interior", "Head-Turner"],
+        "tags": ["luxury", "stylish", "experience", "premium", "memorable"]
+      },
+      "content": {
+        "description": "Convertibles offer the ultimate open-air driving experience in UAE, combining luxury, style, and unforgettable memories under Arabian skies.",
+        "longDescription": "Experience Dubai's stunning skyline with the top down in our premium convertible fleet. From the BMW 4 Series Convertible to the Mercedes E-Class Cabriolet and exotic options like Porsche 911 Cabriolet, our selection caters to those seeking memorable UAE experiences. Perfect for winter months (November-March) when temperatures are ideal for open-air driving. Cruise the Palm Jumeirah, drive along JBR Beach, or explore Abu Dhabi's Corniche with warm breezes and panoramic views. Popular for romantic getaways, honeymoons, and milestone celebrations.",
+        "benefits": [
+          "Unforgettable open-air driving experience under UAE skies",
+          "Perfect for romantic occasions and special celebrations",
+          "Stunning photo opportunities at iconic UAE landmarks",
+          "Premium comfort with retractable hardtop or soft-top roofs",
+          "Ideal for winter season driving (November to March)"
+        ],
+        "features": [
+          "Power-operated retractable roof (opens in 20-30 seconds)",
+          "Wind deflectors for comfortable high-speed cruising",
+          "Premium leather seats with heating and ventilation",
+          "Advanced climate control maintains comfort top-down",
+          "Premium sound systems with enhanced acoustics"
+        ],
+        "highlights": [
+          "Best enjoyed during UAE winter season (Nov-Mar)",
+          "Starting from 300 AED/day for premium convertibles",
+          "Popular models: BMW 4 Series, Mercedes E-Class, Porsche 911",
+          "Perfect for Palm Jumeirah and Corniche coastal drives"
+        ],
+        "faqs": [
+          {
+            "question": "When is the best time to rent a convertible in UAE?",
+            "answer": "November to March offers perfect convertible weather with temperatures of 20-28°C. Summer months (June-August) are extremely hot (40-50°C) making top-down driving uncomfortable. We offer special winter season rates and availability."
+          },
+          {
+            "question": "Are convertibles safe to drive in UAE?",
+            "answer": "Yes! Modern convertibles feature reinforced frames, roll-over protection, and same safety systems as hardtop models. All our convertibles have retractable hardtops that provide security when parked and excellent protection when closed."
+          },
+          {
+            "question": "Can I park a convertible safely in Dubai?",
+            "answer": "Absolutely! Dubai has excellent security. We recommend using mall parking, hotel valet, or secured parking areas. All convertibles have alarm systems and hardtop roofs that close completely, providing the same security as regular cars."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "alternative",
+          "entityId": "luxury",
+          "entityType": "vehicle",
+          "weight": 8
+        },
+        {
+          "type": "alternative",
+          "entityId": "sports",
+          "entityType": "vehicle",
+          "weight": 7
+        },
+        {
+          "type": "downgrade",
+          "entityId": "sedan",
+          "entityType": "vehicle",
+          "weight": 5
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} Rental {emirate} - Luxury Open-Top Cars | Rental Fleet UAE",
+        "descriptionTemplate": "Rent convertibles in {emirate}, UAE. BMW, Mercedes, Porsche cabriolets from 300 AED/day. Perfect for winter season driving. Book {emirate} convertible now!",
+        "keywords": ["convertible rental dubai", "cabriolet hire uae", "open top car rental", "bmw convertible rental", "luxury convertible hire", "porsche cabriolet"],
+        "h1Template": "{name} Car Rental in {emirate}",
+        "schemaType": "Product"
+      },
+      "priority": 5
+    },
+    {
+      "id": "pickup",
+      "type": "vehicle",
+      "slug": "pickup",
+      "name": "Pickup Truck",
+      "displayName": "Pickup Truck",
+      "metadata": {
+        "seats": 5,
+        "rating": 4.6,
+        "priceRange": {
+          "min": 160,
+          "max": 450,
+          "currency": "AED"
+        },
+        "stats": {
+          "averageFleetSize": 750,
+          "popularityRank": 5,
+          "fuelEfficiency": "10-13 km/L"
+        },
+        "features": ["4WD Capability", "Large Cargo Bed", "Towing Capacity", "Off-Road Ready", "Powerful Engine"],
+        "tags": ["utility", "cargo", "off-road", "rugged", "versatile"]
+      },
+      "content": {
+        "description": "Pickup trucks provide unmatched versatility and cargo capacity, perfect for construction needs, outdoor adventures, and heavy-duty transportation in UAE.",
+        "longDescription": "Meet your heavy-duty transportation needs with our robust pickup truck fleet, featuring Toyota Hilux, Nissan Navara, and Ford Ranger. These workhorses combine passenger comfort with massive cargo capacity and 4WD capability. Popular among businesses for construction material transport, expats for furniture moving, and adventure seekers for desert camping trips. With 1-ton payload capacity and towing capabilities, pickups handle tasks that regular vehicles cannot. All models feature double-cab configuration with comfortable seating for 5 passengers plus open cargo bed.",
+        "benefits": [
+          "Massive cargo capacity - transport furniture, equipment, materials",
+          "4WD capability for desert and off-road adventures",
+          "Towing capacity up to 3,500 kg for trailers and boats",
+          "Rugged construction handles heavy-duty UAE conditions",
+          "Dual-purpose: passenger comfort plus cargo utility"
+        ],
+        "features": [
+          "4x4 four-wheel drive for off-road capability",
+          "Powerful diesel engines with high torque",
+          "1-ton payload capacity in cargo bed",
+          "Double-cab seating for 5 passengers",
+          "Air conditioning and modern cabin amenities"
+        ],
+        "highlights": [
+          "Perfect for moving, construction, and outdoor adventures",
+          "Starting from 160 AED/day for standard pickups",
+          "Popular models: Toyota Hilux, Nissan Navara, Ford Ranger",
+          "Ideal for businesses and DIY projects in UAE"
+        ],
+        "faqs": [
+          {
+            "question": "Do I need a special license to rent a pickup truck in UAE?",
+            "answer": "No, a standard car license is sufficient for all our pickup trucks. They're classified as light commercial vehicles and drive like large SUVs with automatic transmission for easy handling."
+          },
+          {
+            "question": "Can I use rental pickups for moving furniture?",
+            "answer": "Yes! Pickups are perfect for moving apartments or transporting furniture from IKEA and other stores. The cargo bed accommodates sofas, mattresses, and appliances. Just secure loads properly and avoid exceeding the 1-ton weight limit."
+          },
+          {
+            "question": "Are pickup trucks good for desert driving?",
+            "answer": "Absolutely! Our pickups feature 4WD systems and high ground clearance ideal for desert adventures. However, for serious dune bashing, we recommend joining guided tours with specialized vehicles. Pickups are perfect for beach access and light off-roading."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "alternative",
+          "entityId": "suv",
+          "entityType": "vehicle",
+          "weight": 7
+        },
+        {
+          "type": "alternative",
+          "entityId": "van",
+          "entityType": "vehicle",
+          "weight": 6
+        },
+        {
+          "type": "downgrade",
+          "entityId": "sedan",
+          "entityType": "vehicle",
+          "weight": 4
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} Rental {emirate} - 4WD Hilux, Navara from 160 AED",
+        "descriptionTemplate": "Rent pickup trucks in {emirate}, UAE. Toyota Hilux, Nissan Navara 4x4 from 160 AED/day. Perfect for cargo, moving, and off-road. Book {emirate} pickup now!",
+        "keywords": ["pickup rental uae", "hilux rental dubai", "4x4 truck hire", "cargo truck rental", "toyota hilux hire", "commercial vehicle rental"],
+        "h1Template": "{name} Rental in {emirate}",
+        "schemaType": "Product"
+      },
+      "priority": 6
+    }
+  ]
+}

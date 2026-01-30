@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import DownloadButton from "@/components/DownloadButton";
 import { siteConfig } from "@/lib/site-config";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function ToolsPage() {
   const [roiInputs, setRoiInputs] = useState({
@@ -56,6 +57,7 @@ export default function ToolsPage() {
 
   return (
     <>
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Tools", href: "/tools" }]} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 via-white to-amber-50 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -336,9 +338,9 @@ export default function ToolsPage() {
                 )
               },
               {
-                title: "2024 Market Report",
+                title: "2026 Market Report",
                 description: "Comprehensive UAE rental market analysis and trends",
-                file: "uae-rental-market-report-2024.pdf",
+                file: "uae-rental-market-report-2026.pdf",
                 icon: (
                   <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -395,6 +397,26 @@ export default function ToolsPage() {
               className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition-all"
             >
               Schedule Demo
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Explore Next (Internal Links) */}
+      <section className="py-12 bg-white border-t">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/resources" className="bg-gray-50 border rounded-2xl p-6 hover:shadow-md transition">
+              <div className="font-bold text-gray-900 mb-1">Free resources</div>
+              <div className="text-sm text-gray-600">Templates and reports to speed up ops →</div>
+            </Link>
+            <Link href="/blog" className="bg-gray-50 border rounded-2xl p-6 hover:shadow-md transition">
+              <div className="font-bold text-gray-900 mb-1">Read guides</div>
+              <div className="text-sm text-gray-600">Best practices for fleet and rentals →</div>
+            </Link>
+            <Link href="/compare" className="bg-gray-50 border rounded-2xl p-6 hover:shadow-md transition">
+              <div className="font-bold text-gray-900 mb-1">Compare vehicles</div>
+              <div className="text-sm text-gray-600">Side-by-side comparisons →</div>
             </Link>
           </div>
         </div>

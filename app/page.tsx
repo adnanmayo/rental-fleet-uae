@@ -76,7 +76,7 @@ export default function Home() {
                   FREE DOWNLOAD
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                  2024 UAE Rental Market Report
+                  2026 UAE Rental Market Report
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
                   Comprehensive 50-page guide covering market trends, regulatory compliance, best practices, and growth strategies for UAE rental businesses. Includes exclusive data and case studies.
@@ -99,7 +99,7 @@ export default function Home() {
                 </ul>
                 <DownloadButton
                   title="Download Free Report"
-                  file="uae-rental-market-report-2024.pdf"
+                  file="uae-rental-market-report-2026.pdf"
                   description="50-page comprehensive guide"
                 />
               </div>
@@ -130,8 +130,8 @@ export default function Home() {
 
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             {[
-              { number: "15.2B", label: "Market Size (AED)", desc: "2024 Projection" },
-              { number: "12.5%", label: "Annual Growth", desc: "CAGR 2024-2028" },
+              { number: "15.2B", label: "Market Size (AED)", desc: "2026 Projection" },
+              { number: "12.5%", label: "Annual Growth", desc: "CAGR 2026-2030" },
               { number: "2.5M+", label: "Active Rentals", desc: "Per Year" },
               { number: "89%", label: "Tourist Demand", desc: "International Visitors" }
             ].map((stat, index) => (
@@ -215,7 +215,7 @@ export default function Home() {
             {[
               {
                 category: "Fleet Tech",
-                title: "How to Scale Your UAE Car Rental Business in 2024",
+                title: "How to Scale Your UAE Car Rental Business in 2026",
                 excerpt: "Proven strategies for sustainable growth in the competitive UAE rental market",
                 readTime: "8 min read"
               },

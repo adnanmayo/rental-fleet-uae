@@ -1,0 +1,461 @@
+{
+  "entities": [
+    {
+      "id": "business",
+      "type": "intent",
+      "slug": "business",
+      "name": "Business",
+      "displayName": "Business Travel",
+      "metadata": {
+        "targetAudience": "Corporate Travelers",
+        "rating": 4.9,
+        "priceRange": {
+          "min": 120,
+          "max": 800,
+          "currency": "AED per day"
+        },
+        "stats": {
+          "marketShare": 25,
+          "averageRentalDays": 4,
+          "repeatCustomerRate": 78
+        },
+        "features": ["Executive Vehicles", "Airport Service", "Corporate Accounts", "Invoice Options", "Priority Support"],
+        "tags": ["professional", "executive", "corporate", "meetings", "conferences"]
+      },
+      "content": {
+        "description": "Business car rental in UAE provides professional transportation solutions for corporate travelers, executives, and companies attending meetings, conferences, and business events.",
+        "longDescription": "Our business rental services cater specifically to corporate travelers and professionals visiting UAE for meetings, conferences, exhibitions, and business negotiations. We understand that business travelers require reliable, professional vehicles that make the right impression. Our executive sedan and luxury fleet ensures you arrive at Dubai's DIFC, Abu Dhabi's business districts, or Sharjah's Expo Centre in style. With dedicated corporate accounts, invoice processing, airport meet-and-greet, and priority support, we handle all transportation details so you can focus on your business. Popular vehicles include Mercedes E-Class, BMW 5 Series, Toyota Camry, and executive SUVs.",
+        "benefits": [
+          "Professional executive vehicles perfect for client meetings",
+          "Corporate accounts with centralized billing and reporting",
+          "Priority booking and dedicated account management",
+          "Airport meet-and-greet services with fast-track processing",
+          "Flexible rental terms for last-minute business changes"
+        ],
+        "features": [
+          "Executive sedans and luxury vehicles with professional appearance",
+          "Wi-Fi hotspot and charging cables for working on the move",
+          "Airport lounge access and priority pickup services",
+          "Detailed invoices and receipts for expense reporting",
+          "24/7 business support with dedicated phone line"
+        ],
+        "highlights": [
+          "Preferred by 25% of UAE car rental customers",
+          "Average rental: 4 days for business conferences",
+          "78% repeat customer rate among corporate clients",
+          "Serving 500+ corporate accounts in UAE"
+        ],
+        "faqs": [
+          {
+            "question": "What vehicles are best for business travel in UAE?",
+            "answer": "Executive sedans like Mercedes E-Class, BMW 5 Series, Toyota Camry, and Audi A6 are most popular for business travel. These vehicles project professionalism, offer comfort for UAE's highways, and have ample trunk space for luggage and presentation materials."
+          },
+          {
+            "question": "Do you offer corporate accounts for companies?",
+            "answer": "Yes! We offer corporate accounts with centralized billing, monthly invoicing, volume discounts, and dedicated account managers. Perfect for companies with frequent business travelers to UAE. Contact our corporate team to set up an account."
+          },
+          {
+            "question": "Can I get an invoice for expense reimbursement?",
+            "answer": "Absolutely! All rentals include detailed invoices with company letterhead, VAT breakdown, and all necessary information for expense reporting. We can email invoices immediately or provide physical copies at pickup."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "similar",
+          "entityId": "corporate",
+          "entityType": "intent",
+          "weight": 9
+        },
+        {
+          "type": "alternative",
+          "entityId": "tourism",
+          "entityType": "intent",
+          "weight": 5
+        },
+        {
+          "type": "related",
+          "entityId": "chauffeur-driven",
+          "entityType": "service",
+          "weight": 7
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} Car Rental {emirate} - Executive Vehicles for Corporate Travel",
+        "descriptionTemplate": "Business car rental in {emirate}, UAE. Executive {vehicleType}, corporate accounts, airport service. Professional transportation for meetings and conferences. Book now!",
+        "keywords": ["business car rental uae", "corporate car hire dubai", "executive vehicle rental", "business travel car", "company car rental abu dhabi", "meeting car rental"],
+        "h1Template": "{name} Car Rental in {emirate}, UAE",
+        "schemaType": "Service"
+      },
+      "priority": 9
+    },
+    {
+      "id": "tourism",
+      "type": "intent",
+      "slug": "tourism",
+      "name": "Tourism",
+      "displayName": "Tourism & Sightseeing",
+      "metadata": {
+        "targetAudience": "Tourists & Visitors",
+        "rating": 4.8,
+        "priceRange": {
+          "min": 60,
+          "max": 400,
+          "currency": "AED per day"
+        },
+        "stats": {
+          "marketShare": 50,
+          "averageRentalDays": 7,
+          "repeatCustomerRate": 45
+        },
+        "features": ["GPS Navigation", "Tourist Guides", "Flexible Pickup", "Unlimited Mileage", "Multi-emirate Travel"],
+        "tags": ["vacation", "sightseeing", "exploration", "tourist", "leisure"]
+      },
+      "content": {
+        "description": "Tourism car rental enables visitors to explore UAE's incredible attractions independently, from Dubai's Burj Khalifa to Abu Dhabi's Sheikh Zayed Mosque, with complete freedom and flexibility.",
+        "longDescription": "Discover UAE's wonders at your own pace with our tourism-focused rental services. Perfect for international tourists and visitors who want to explore beyond organized tours. Drive from Dubai's iconic Palm Jumeirah to Abu Dhabi's Louvre, visit Sharjah's cultural sites, enjoy Fujairah's beaches, and experience Ras Al Khaimah's mountains - all on your schedule. Our tourist packages include GPS navigation preloaded with UAE attractions, detailed driving guides, recommended itineraries, and 24/7 multilingual support. With unlimited mileage, you can visit all seven emirates without restrictions. Popular vehicles for tourists include economy cars for solo travelers, sedans for couples, and SUVs for families.",
+        "benefits": [
+          "Complete freedom to explore UAE at your own pace and schedule",
+          "Unlimited mileage to visit all emirates and major attractions",
+          "GPS navigation with preloaded tourist destinations and POIs",
+          "Tourist guides with recommended routes and hidden gems",
+          "Flexible booking with easy modifications for travel changes"
+        ],
+        "features": [
+          "Multilingual GPS with attractions, malls, beaches, and restaurants",
+          "Welcome packet with UAE driving tips and attraction guides",
+          "24/7 multilingual support (English, Arabic, Hindi, Urdu, Chinese)",
+          "Airport pickup/drop-off for convenient arrival and departure",
+          "Toll tags (Salik/Darb) included for seamless highway travel"
+        ],
+        "highlights": [
+          "Most popular rental purpose - 50% of all UAE rentals",
+          "Average tourist rental: 7 days exploring UAE",
+          "Perfect for visiting Dubai, Abu Dhabi, and Northern Emirates",
+          "Over 2 million tourists rent cars annually in UAE"
+        ],
+        "faqs": [
+          {
+            "question": "What's the best car for touring UAE as a tourist?",
+            "answer": "For solo travelers or couples, economy or compact cars (60-90 AED/day) are perfect. Families prefer sedans or SUVs (120-180 AED/day) for space and comfort. All include A/C essential for UAE weather, GPS navigation, and unlimited mileage for exploring."
+          },
+          {
+            "question": "Can I drive from Dubai to Abu Dhabi and other emirates?",
+            "answer": "Yes! All rentals include unlimited mileage throughout UAE. Dubai to Abu Dhabi is 150km (90 minutes), to Sharjah 25km (20 minutes), and to Fujairah 120km (90 minutes). Roads are excellent with clear English signage."
+          },
+          {
+            "question": "Do you provide tourist maps and attraction guides?",
+            "answer": "Yes! Every tourist rental includes GPS with preloaded UAE attractions, a welcome packet with recommended routes, driving tips, and attraction information. Our support team can suggest personalized itineraries based on your interests."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "alternative",
+          "entityId": "business",
+          "entityType": "intent",
+          "weight": 6
+        },
+        {
+          "type": "related",
+          "entityId": "family",
+          "entityType": "intent",
+          "weight": 8
+        },
+        {
+          "type": "related",
+          "entityId": "self-drive",
+          "entityType": "service",
+          "weight": 9
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} Car Rental {emirate} - Explore UAE Your Way from 60 AED",
+        "descriptionTemplate": "Tourist car rental in {emirate}, UAE from 60 AED/day. {vehicleType} with GPS, unlimited mileage. Explore Dubai, Abu Dhabi attractions. Book your UAE tour rental!",
+        "keywords": ["tourist car rental uae", "tourism car hire dubai", "sightseeing car rental", "vacation car hire", "explore uae car rental", "visitor car rental dubai"],
+        "h1Template": "{name} Car Rental in {emirate}",
+        "schemaType": "Service"
+      },
+      "priority": 10
+    },
+    {
+      "id": "family",
+      "type": "intent",
+      "slug": "family",
+      "name": "Family",
+      "displayName": "Family Travel",
+      "metadata": {
+        "targetAudience": "Families with Children",
+        "rating": 4.9,
+        "priceRange": {
+          "min": 120,
+          "max": 500,
+          "currency": "AED per day"
+        },
+        "stats": {
+          "marketShare": 30,
+          "averageRentalDays": 10,
+          "repeatCustomerRate": 62
+        },
+        "features": ["Spacious Vehicles", "Child Seats", "Family-Friendly", "Safety Focus", "Entertainment"],
+        "tags": ["family-vacation", "kids", "spacious", "safe", "comfortable"]
+      },
+      "content": {
+        "description": "Family car rental provides spacious, safe vehicles perfect for parents traveling with children, featuring child seats, entertainment systems, and room for luggage and gear.",
+        "longDescription": "Travel comfortably as a family with our specialized family rental services designed for parents with children visiting UAE. We understand family travel challenges - from fitting child seats to packing strollers, toys, and luggage. Our family fleet includes spacious SUVs, 7-seater vehicles, and vans with ample cargo space. All vehicles feature powerful air conditioning (essential for UAE heat), entertainment systems for keeping kids occupied, and modern safety features for peace of mind. Free child seats available in all sizes (infant, toddler, booster) - just request during booking. Popular with families visiting during school holidays to experience Dubai's theme parks, Abu Dhabi's attractions, and UAE's family-friendly beaches.",
+        "benefits": [
+          "Spacious vehicles accommodating entire family plus luggage",
+          "Free child safety seats (infant, toddler, booster) available",
+          "Entertainment systems to keep children occupied during drives",
+          "Powerful dual A/C for UAE heat with rear climate control",
+          "Family-friendly routes and attraction recommendations"
+        ],
+        "features": [
+          "7-seater SUVs and vans perfect for families of 5-8 people",
+          "Complimentary child seats in all sizes (request at booking)",
+          "Rear entertainment systems with movies and games",
+          "Large trunk space for strollers, beach gear, and shopping",
+          "USB charging ports throughout for tablets and devices"
+        ],
+        "highlights": [
+          "30% of UAE rentals are for family vacations",
+          "Average family rental: 10 days during school holidays",
+          "Most popular: Toyota Fortuner, Nissan Patrol, Toyota Hiace",
+          "Free child seats save families 150+ AED per week"
+        ],
+        "faqs": [
+          {
+            "question": "What's the best vehicle for a family of 5-6 people?",
+            "answer": "For families of 5-6, we recommend 7-seater SUVs like Toyota Fortuner, Nissan Patrol, or Mitsubishi Pajero (150-250 AED/day). These offer three rows of seating, large trunks for strollers and luggage, and powerful A/C essential for UAE's climate."
+          },
+          {
+            "question": "Do you provide child car seats free?",
+            "answer": "Yes! Child seats are complimentary with all rentals. We provide infant carriers (0-12 months), toddler seats (1-4 years), and booster seats (4-8 years). Just specify ages during booking and we'll install them before pickup. UAE law requires car seats for children under 4."
+          },
+          {
+            "question": "Are UAE roads safe for families with children?",
+            "answer": "Absolutely! UAE has modern, well-maintained roads with strict safety enforcement. Speed cameras and traffic monitoring ensure safe driving. All major attractions have excellent parking. Our vehicles include modern safety features and we provide family-friendly route recommendations."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "related",
+          "entityId": "tourism",
+          "entityType": "intent",
+          "weight": 8
+        },
+        {
+          "type": "alternative",
+          "entityId": "business",
+          "entityType": "intent",
+          "weight": 4
+        },
+        {
+          "type": "related",
+          "entityId": "suv",
+          "entityType": "vehicle",
+          "weight": 9
+        },
+        {
+          "type": "related",
+          "entityId": "van",
+          "entityType": "vehicle",
+          "weight": 8
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} Car Rental {emirate} - Spacious Vehicles with Free Child Seats",
+        "descriptionTemplate": "Family car rental in {emirate}, UAE. 7-seater {vehicleType} with free child seats, entertainment systems. Perfect for families exploring UAE. Book now!",
+        "keywords": ["family car rental uae", "7 seater rental dubai", "car rental with child seat", "family suv rental", "kids car rental dubai", "family van hire uae"],
+        "h1Template": "{name} Car Rental in {emirate}",
+        "schemaType": "Service"
+      },
+      "priority": 9
+    },
+    {
+      "id": "wedding",
+      "type": "intent",
+      "slug": "wedding",
+      "name": "Wedding",
+      "displayName": "Wedding & Special Events",
+      "metadata": {
+        "targetAudience": "Wedding Couples & Event Planners",
+        "rating": 5.0,
+        "priceRange": {
+          "min": 400,
+          "max": 5000,
+          "currency": "AED per day"
+        },
+        "stats": {
+          "marketShare": 5,
+          "averageRentalDays": 2,
+          "repeatCustomerRate": 35
+        },
+        "features": ["Luxury Vehicles", "Decoration", "Photography", "Chauffeur", "VIP Service"],
+        "tags": ["wedding", "celebration", "luxury", "special-occasion", "memorable"]
+      },
+      "content": {
+        "description": "Wedding car rental provides stunning luxury and exotic vehicles for making your special day unforgettable in UAE, with decoration, chauffeur, and VIP services included.",
+        "longDescription": "Make your wedding day extraordinary with our specialized wedding and special event car rental services. From grand arrivals at Dubai's Atlantis The Palm to traditional UAE weddings and destination ceremonies in Abu Dhabi, our luxury fleet creates magical moments. Choose from Rolls-Royce, Bentley, Mercedes S-Class, Range Rover, exotic sports cars, or classic vintage vehicles - all available with optional decoration, ribbons, and flowers. Professional chauffeurs in formal attire ensure the bride, groom, and wedding party travel in style and comfort. Our wedding coordinators work with your event planners to perfect every detail, from timing to photography opportunities. Also popular for anniversaries, proposals, milestone birthdays, and corporate galas.",
+        "benefits": [
+          "Exclusive luxury and exotic vehicles for unforgettable entrances",
+          "Professional chauffeurs in formal attire with red carpet service",
+          "Vehicle decoration with ribbons, flowers, and customization",
+          "Photography coordination for perfect vehicle shots",
+          "Flexible timing and route planning with wedding coordinator"
+        ],
+        "features": [
+          "Premium fleet: Rolls-Royce, Bentley, Mercedes S-Class, exotics",
+          "Complimentary vehicle decoration and ribbon colors",
+          "Professional chauffeur in formal attire with name signs",
+          "Red carpet service and door opening for grand entrances",
+          "Coordination with wedding planners and photographers"
+        ],
+        "highlights": [
+          "Serving 500+ UAE weddings annually",
+          "Most popular: Rolls-Royce Phantom, Bentley Flying Spur",
+          "Average booking: 4-6 hours for wedding ceremony and photos",
+          "Available at all major UAE wedding venues"
+        ],
+        "faqs": [
+          {
+            "question": "What cars are most popular for weddings in UAE?",
+            "answer": "Rolls-Royce Phantom and Ghost, Bentley Flying Spur, Mercedes S-Class, Range Rover Autobiography, and exotic sports cars like Ferrari are most popular. Vintage classics are also available. Pricing ranges from 1,500-5,000 AED for 4-6 hours depending on vehicle."
+          },
+          {
+            "question": "Do wedding car rentals include decoration?",
+            "answer": "Yes! We provide complimentary vehicle decoration with ribbons in your chosen colors, fabric draping, and small floral arrangements. For elaborate custom decorations, we coordinate with your wedding decorator. Chauffeur service is included in all wedding packages."
+          },
+          {
+            "question": "How far in advance should I book a wedding car?",
+            "answer": "Book 4-8 weeks in advance for best availability, especially during UAE's peak wedding season (October-April). Last-minute bookings (1-2 weeks) are possible but vehicle selection may be limited. We recommend booking early to secure your preferred luxury vehicle."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "related",
+          "entityId": "luxury",
+          "entityType": "vehicle",
+          "weight": 10
+        },
+        {
+          "type": "related",
+          "entityId": "sports",
+          "entityType": "vehicle",
+          "weight": 9
+        },
+        {
+          "type": "related",
+          "entityId": "chauffeur-driven",
+          "entityType": "service",
+          "weight": 10
+        },
+        {
+          "type": "alternative",
+          "entityId": "corporate",
+          "entityType": "intent",
+          "weight": 5
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} Car Rental {emirate} - Luxury Vehicles for Special Days",
+        "descriptionTemplate": "Wedding car rental in {emirate}, UAE. Rolls-Royce, Bentley, luxury {vehicleType} with chauffeur and decoration. Make your special day unforgettable. Book now!",
+        "keywords": ["wedding car rental uae", "luxury wedding car dubai", "rolls royce wedding", "bridal car rental", "wedding bentley hire", "special occasion car rental"],
+        "h1Template": "{name} Car Rental in {emirate}",
+        "schemaType": "Service"
+      },
+      "priority": 7
+    },
+    {
+      "id": "corporate",
+      "type": "intent",
+      "slug": "corporate",
+      "name": "Corporate",
+      "displayName": "Corporate Fleet Solutions",
+      "metadata": {
+        "targetAudience": "Companies & Organizations",
+        "rating": 4.9,
+        "priceRange": {
+          "min": 1500,
+          "max": 15000,
+          "currency": "AED per month"
+        },
+        "stats": {
+          "marketShare": 15,
+          "averageRentalDays": 180,
+          "repeatCustomerRate": 89
+        },
+        "features": ["Fleet Management", "Volume Discounts", "Centralized Billing", "Account Management", "Replacement Vehicles"],
+        "tags": ["corporate", "fleet", "business", "long-term", "enterprise"]
+      },
+      "content": {
+        "description": "Corporate fleet solutions provide comprehensive vehicle management for companies, offering volume discounts, centralized billing, and dedicated support for UAE businesses.",
+        "longDescription": "Streamline your company's transportation needs with our corporate fleet management solutions designed for UAE businesses. Perfect for companies needing vehicles for executives, sales teams, staff transport, or project requirements. We handle everything - from vehicle procurement and insurance to maintenance and replacement - allowing you to focus on your core business. Our corporate clients include multinational corporations, SMEs, construction companies, real estate firms, and event organizations across Dubai, Abu Dhabi, and UAE. Flexible contracts from 3 months to multi-year agreements with significant volume discounts. All corporate packages include dedicated account management, 24/7 support, detailed reporting, and priority service.",
+        "benefits": [
+          "Significant cost savings with volume discounts up to 40%",
+          "Centralized billing and comprehensive monthly reporting",
+          "Dedicated corporate account manager and priority support",
+          "Free maintenance, insurance, and replacement vehicles included",
+          "Flexible fleet size adjustment based on business needs"
+        ],
+        "features": [
+          "Wide vehicle selection from economy to executive and vans",
+          "Comprehensive monthly reporting and expense tracking",
+          "Free scheduled maintenance and 24-hour replacement service",
+          "Dedicated phone line and account management team",
+          "Corporate branding and vehicle customization available"
+        ],
+        "highlights": [
+          "Serving 200+ corporate clients in UAE",
+          "89% client retention rate - highest in industry",
+          "Average corporate fleet: 15-50 vehicles",
+          "Volume discounts save companies 30-40% vs individual rentals"
+        ],
+        "faqs": [
+          {
+            "question": "What vehicles are included in corporate fleet packages?",
+            "answer": "Choose from economy cars for staff (1,200 AED/month), sedans for sales teams (1,800 AED/month), executive vehicles for management (3,000+ AED/month), SUVs, vans, and pickup trucks. Mix and match based on your company's needs with volume discounts applied."
+          },
+          {
+            "question": "What's included in corporate fleet management?",
+            "answer": "All packages include comprehensive insurance, regular maintenance, 24/7 roadside assistance, replacement vehicles during service, unlimited mileage, Salik/Darb toll tags, dedicated account manager, monthly reporting, and centralized billing. You just drive - we handle everything else."
+          },
+          {
+            "question": "What's the minimum fleet size for corporate rates?",
+            "answer": "Corporate rates start from 5 vehicles. Larger fleets receive better discounts: 5-10 vehicles (15% off), 11-25 vehicles (25% off), 25+ vehicles (35-40% off). Short-term corporate needs (3-6 months) also qualify for corporate rates."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "similar",
+          "entityId": "business",
+          "entityType": "intent",
+          "weight": 8
+        },
+        {
+          "type": "related",
+          "entityId": "monthly-rental",
+          "entityType": "service",
+          "weight": 10
+        },
+        {
+          "type": "alternative",
+          "entityId": "tourism",
+          "entityType": "intent",
+          "weight": 3
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} Fleet Management {emirate} - Save Up to 40% on Volume",
+        "descriptionTemplate": "Corporate fleet solutions in {emirate}, UAE. {vehicleType} fleet management with volume discounts, maintenance, and dedicated support. Request corporate quote!",
+        "keywords": ["corporate fleet uae", "company car rental dubai", "business fleet management", "corporate vehicle leasing", "fleet rental abu dhabi", "company transport solutions"],
+        "h1Template": "{name} Fleet Solutions in {emirate}",
+        "schemaType": "Service"
+      },
+      "priority": 8
+    }
+  ]
+}

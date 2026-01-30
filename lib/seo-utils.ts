@@ -26,12 +26,14 @@ export function generateMetadata({
   modifiedTime?: string;
   authors?: string[];
 }): Metadata {
-  const fullTitle = `${title} | ${siteConfig.name}`;
   const canonicalUrl = canonical || `${siteConfig.url}`;
   const ogImageUrl = ogImage || `${siteConfig.url}${siteConfig.seo.ogImage.url}`;
 
   const metadata: Metadata = {
-    title: fullTitle,
+    // IMPORTANT:
+    // The global layout already applies `siteConfig.seo.titleTemplate` (e.g. "%s | Rental Fleet UAE").
+    // So here we set the raw page title, otherwise you get: "X | Rental Fleet UAE | Rental Fleet UAE".
+    title,
     description,
     keywords: [...siteConfig.primaryKeywords, ...keywords].join(', '),
     authors: authors.map(name => ({ name })),
@@ -52,7 +54,7 @@ export function generateMetadata({
       canonical: canonicalUrl,
     },
     openGraph: {
-      title: fullTitle,
+      title,
       description,
       url: canonicalUrl,
       siteName: siteConfig.name,
@@ -69,7 +71,7 @@ export function generateMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: fullTitle,
+      title,
       description,
       images: [ogImageUrl],
       creator: siteConfig.social.twitter,

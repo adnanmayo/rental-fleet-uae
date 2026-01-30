@@ -1,0 +1,230 @@
+{
+  "entities": [
+    {
+      "id": "dubai",
+      "type": "emirate",
+      "slug": "dubai",
+      "name": "Dubai",
+      "displayName": "Dubai",
+      "metadata": {
+        "population": 3600000,
+        "rating": 4.8,
+        "stats": {
+          "rentalCompanies": 150,
+          "fleetSize": 12000,
+          "touristVisits": 16700000
+        },
+        "features": ["International Airport", "Metro System", "Tourist Hub", "Business Center"],
+        "tags": ["luxury", "tourism", "business", "modern"],
+        "location": {
+          "lat": 25.2048,
+          "lng": 55.2708
+        }
+      },
+      "content": {
+        "description": "Dubai, the jewel of the UAE, offers world-class car rental services for tourists and residents alike.",
+        "longDescription": "As the UAE's most visited emirate, Dubai combines modern infrastructure with traditional Arabian hospitality. Our car rental services in Dubai provide access to luxury vehicles, economy options, and everything in between.",
+        "benefits": [
+          "Extensive fleet selection from economy to luxury",
+          "24/7 pickup and drop-off at Dubai Airport",
+          "Competitive rates for daily, weekly, and monthly rentals",
+          "Full insurance coverage and roadside assistance",
+          "Easy online booking with instant confirmation"
+        ],
+        "features": [
+          "Airport delivery and collection",
+          "Salik (toll) tag included",
+          "GPS navigation systems",
+          "Child safety seats available",
+          "Multilingual customer support"
+        ],
+        "highlights": [
+          "Home to world's tallest building - Burj Khalifa",
+          "16.7M+ international visitors annually",
+          "150+ car rental companies operating",
+          "Modern road infrastructure with smart traffic systems"
+        ],
+        "faqs": [
+          {
+            "question": "What documents do I need to rent a car in Dubai?",
+            "answer": "For tourists: valid passport, tourist visa, home country driving license, and International Driving Permit (IDP). For UAE residents: Emirates ID and valid UAE driving license."
+          },
+          {
+            "question": "Is insurance included in Dubai car rentals?",
+            "answer": "Yes, comprehensive insurance is included with all our rentals in Dubai, covering third-party liability and collision damage waiver (CDW)."
+          },
+          {
+            "question": "Can I drive my Dubai rental car to other emirates?",
+            "answer": "Absolutely! You can drive your rental car throughout all seven emirates of the UAE without any restrictions."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "sibling",
+          "entityId": "abu-dhabi",
+          "entityType": "emirate",
+          "weight": 10
+        },
+        {
+          "type": "sibling",
+          "entityId": "sharjah",
+          "entityType": "emirate",
+          "weight": 8
+        }
+      ],
+      "seo": {
+        "titleTemplate": "Car Rental in {name} - Best Prices & {vehicleType} Options | Rental Fleet UAE",
+        "descriptionTemplate": "Rent a car in {name}, UAE with the best rates on {vehicleType}s. Airport pickup, 24/7 support, and comprehensive insurance. Book your {name} rental now!",
+        "keywords": ["dubai car rental", "rent car dubai", "dubai vehicle rental", "car hire dubai", "dubai airport car rental"],
+        "h1Template": "Car Rental in {name}, UAE",
+        "schemaType": "Place"
+      },
+      "priority": 10
+    },
+    {
+      "id": "abu-dhabi",
+      "type": "emirate",
+      "slug": "abu-dhabi",
+      "name": "Abu Dhabi",
+      "displayName": "Abu Dhabi",
+      "metadata": {
+        "population": 1500000,
+        "rating": 4.7,
+        "stats": {
+          "rentalCompanies": 80,
+          "fleetSize": 6000,
+          "touristVisits": 5500000
+        },
+        "features": ["Capital City", "Cultural Hub", "F1 Circuit", "Government Center"],
+        "tags": ["capital", "culture", "business", "heritage"],
+        "location": {
+          "lat": 24.4539,
+          "lng": 54.3773
+        }
+      },
+      "content": {
+        "description": "Abu Dhabi, the UAE capital, provides premium car rental services for business and leisure travelers.",
+        "longDescription": "As the capital and second-largest emirate, Abu Dhabi offers sophisticated car rental services with a focus on comfort and reliability. From the Louvre Abu Dhabi to Yas Island, explore the emirate with ease.",
+        "benefits": [
+          "Premium fleet with luxury and executive options",
+          "Corporate rental packages available",
+          "Long-term rental discounts",
+          "Darb (toll) system integration",
+          "VIP concierge services for luxury bookings"
+        ],
+        "features": [
+          "Abu Dhabi Airport delivery",
+          "Darb toll tag included",
+          "Chauffeur services available",
+          "Executive sedans and SUVs",
+          "Business account management"
+        ],
+        "highlights": [
+          "UAE's capital and political center",
+          "Home to Louvre Abu Dhabi and Sheikh Zayed Mosque",
+          "Yas Island entertainment destination",
+          "F1 Grand Prix host at Yas Marina Circuit"
+        ],
+        "faqs": [
+          {
+            "question": "What's the difference between renting in Abu Dhabi vs Dubai?",
+            "answer": "Abu Dhabi uses the Darb toll system while Dubai uses Salik. Both systems are included in your rental. Abu Dhabi tends to have slightly lower traffic and longer distances between attractions."
+          },
+          {
+            "question": "Can I rent a luxury car in Abu Dhabi?",
+            "answer": "Yes, Abu Dhabi offers an extensive range of luxury vehicles including Mercedes, BMW, Audi, and exotic cars perfect for business or special occasions."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "sibling",
+          "entityId": "dubai",
+          "entityType": "emirate",
+          "weight": 10
+        }
+      ],
+      "seo": {
+        "titleTemplate": "Car Rental Abu Dhabi - {vehicleType} Rentals & Best Rates",
+        "descriptionTemplate": "Rent a car in Abu Dhabi with flexible terms and competitive rates. {vehicleType} options available for business and leisure. Book your Abu Dhabi rental today!",
+        "keywords": ["abu dhabi car rental", "rent car abu dhabi", "abu dhabi vehicle hire", "capital car rental"],
+        "h1Template": "Premium Car Rental in {name}",
+        "schemaType": "Place"
+      },
+      "priority": 9
+    },
+    {
+      "id": "sharjah",
+      "type": "emirate",
+      "slug": "sharjah",
+      "name": "Sharjah",
+      "displayName": "Sharjah",
+      "metadata": {
+        "population": 1600000,
+        "rating": 4.5,
+        "stats": {
+          "rentalCompanies": 45,
+          "fleetSize": 3500,
+          "touristVisits": 3000000
+        },
+        "features": ["Cultural Capital", "Museums", "Family-Friendly", "Budget-Friendly"],
+        "tags": ["culture", "family", "affordable", "heritage"],
+        "location": {
+          "lat": 25.3463,
+          "lng": 55.4209
+        }
+      },
+      "content": {
+        "description": "Sharjah, the cultural capital of UAE, offers affordable car rental options for families and budget-conscious travelers.",
+        "longDescription": "Known as the cultural heart of the UAE, Sharjah provides excellent value car rental services. With proximity to Dubai and a focus on family-friendly attractions, it's an ideal base for UAE exploration.",
+        "benefits": [
+          "Most affordable rental rates in UAE",
+          "Family-friendly vehicle options",
+          "Close proximity to Dubai (20 minutes)",
+          "No alcohol restrictions - family-oriented emirate",
+          "Excellent value for long-term rentals"
+        ],
+        "features": [
+          "Sharjah Airport pickup available",
+          "Economy to mid-range fleet",
+          "Flexible rental terms",
+          "Budget-friendly daily rates",
+          "Family vans and 7-seaters"
+        ],
+        "highlights": [
+          "UNESCO World Heritage cultural sites",
+          "Over 20 museums and cultural centers",
+          "Family-oriented emirate",
+          "20% lower rental costs vs Dubai"
+        ],
+        "faqs": [
+          {
+            "question": "Why are car rentals cheaper in Sharjah?",
+            "answer": "Sharjah has lower operating costs and focuses on affordability. It's perfect for budget-conscious travelers who want to explore Dubai and other emirates while saving money."
+          },
+          {
+            "question": "Can I rent in Sharjah and drive to Dubai?",
+            "answer": "Yes, absolutely! Sharjah is only 20 minutes from Dubai, and all our rentals allow unlimited mileage throughout the UAE."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "sibling",
+          "entityId": "dubai",
+          "entityType": "emirate",
+          "weight": 9
+        }
+      ],
+      "seo": {
+        "titleTemplate": "Affordable Car Rental in {name} - Budget {vehicleType} Options",
+        "descriptionTemplate": "Budget-friendly car rental in {name}, UAE. Save up to 20% on {vehicleType} rentals. Family vans, economy cars, and flexible terms. Book Sharjah rentals now!",
+        "keywords": ["sharjah car rental", "cheap car rental sharjah", "budget rental uae", "sharjah vehicle hire"],
+        "h1Template": "Budget Car Rental in {name}",
+        "schemaType": "Place"
+      },
+      "priority": 7
+    }
+  ]
+}

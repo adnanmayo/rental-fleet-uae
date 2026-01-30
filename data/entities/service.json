@@ -1,0 +1,449 @@
+{
+  "entities": [
+    {
+      "id": "daily-rental",
+      "type": "service",
+      "slug": "daily-rental",
+      "name": "Daily Rental",
+      "displayName": "Daily Car Rental",
+      "metadata": {
+        "duration": "1-6 days",
+        "rating": 4.8,
+        "priceRange": {
+          "min": 60,
+          "max": 800,
+          "currency": "AED"
+        },
+        "stats": {
+          "averageBookingLength": 3,
+          "popularityRank": 1,
+          "customerSatisfaction": 94
+        },
+        "features": ["Flexible Duration", "No Long-term Commitment", "Quick Booking", "Same-day Availability", "Full Insurance"],
+        "tags": ["short-term", "flexible", "tourist", "business-trip", "convenient"]
+      },
+      "content": {
+        "description": "Daily car rental in UAE offers maximum flexibility for short trips, tourist visits, and business travel with competitive rates and no long-term commitment.",
+        "longDescription": "Our daily rental service is designed for travelers who need temporary transportation in UAE. Perfect for tourists exploring Dubai and Abu Dhabi, business travelers attending conferences, or residents whose cars are in maintenance. With rates starting from 60 AED per day and same-day availability, daily rentals provide the ultimate flexibility. Choose from economy to luxury vehicles, all including comprehensive insurance, 24/7 roadside assistance, and unlimited mileage within UAE. Book for as little as one day or extend up to a week with competitive daily rates.",
+        "benefits": [
+          "Maximum flexibility with no long-term commitment required",
+          "Same-day booking and pickup available at major UAE locations",
+          "Competitive daily rates starting from 60 AED for economy cars",
+          "Full insurance coverage and 24/7 roadside assistance included",
+          "Perfect for tourists, business trips, and short-term needs"
+        ],
+        "features": [
+          "Book for 1-6 days with easy online reservation system",
+          "Airport pickup and drop-off services available",
+          "Comprehensive insurance with zero deductible options",
+          "Unlimited mileage throughout all UAE emirates",
+          "Free additional driver on bookings of 3+ days"
+        ],
+        "highlights": [
+          "Most popular rental option for UAE tourists",
+          "Over 85% of customers are tourists and business travelers",
+          "Average booking length is 3 days in UAE",
+          "Same-day availability at Dubai and Abu Dhabi airports"
+        ],
+        "faqs": [
+          {
+            "question": "What's the minimum rental period for daily rentals?",
+            "answer": "The minimum rental period is 24 hours (1 day). You can rent for as little as one day or up to 6 days under daily rental rates. For rentals longer than 6 days, our weekly rental rates offer better value."
+          },
+          {
+            "question": "Is insurance included in daily rental rates?",
+            "answer": "Yes, all daily rentals include comprehensive insurance covering third-party liability and collision damage waiver (CDW). Optional zero-deductible insurance is available for 30-50 AED per day for complete peace of mind."
+          },
+          {
+            "question": "Can I extend my daily rental if I need the car longer?",
+            "answer": "Absolutely! Contact us before your rental period ends to extend. If you extend to 7+ days total, we'll automatically apply our more economical weekly rates to give you the best value."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "upgrade",
+          "entityId": "weekly-rental",
+          "entityType": "service",
+          "weight": 9
+        },
+        {
+          "type": "alternative",
+          "entityId": "self-drive",
+          "entityType": "service",
+          "weight": 7
+        },
+        {
+          "type": "related",
+          "entityId": "chauffeur-driven",
+          "entityType": "service",
+          "weight": 5
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} in {emirate} - From 60 AED/Day | Rental Fleet UAE",
+        "descriptionTemplate": "Daily car rental in {emirate}, UAE from 60 AED. {vehicleType} options with insurance, 24/7 support, and same-day availability. Book your {emirate} daily rental now!",
+        "keywords": ["daily car rental uae", "short term rental dubai", "daily hire abu dhabi", "tourist car rental", "daily vehicle rental", "24 hour car rental uae"],
+        "h1Template": "{name} Service in {emirate}, UAE",
+        "schemaType": "Service"
+      },
+      "priority": 10
+    },
+    {
+      "id": "weekly-rental",
+      "type": "service",
+      "slug": "weekly-rental",
+      "name": "Weekly Rental",
+      "displayName": "Weekly Car Rental",
+      "metadata": {
+        "duration": "7-27 days",
+        "rating": 4.9,
+        "priceRange": {
+          "min": 350,
+          "max": 4500,
+          "currency": "AED"
+        },
+        "stats": {
+          "averageBookingLength": 14,
+          "popularityRank": 2,
+          "customerSatisfaction": 96
+        },
+        "features": ["Best Value", "Discounted Rates", "Flexible Extension", "Priority Support", "Free Extras"],
+        "tags": ["medium-term", "value", "extended-stay", "vacation", "savings"]
+      },
+      "content": {
+        "description": "Weekly car rental provides exceptional value for extended stays in UAE, offering significantly discounted rates and premium perks for 1-4 week bookings.",
+        "longDescription": "Save up to 30% with our weekly rental packages, designed for extended vacations, business assignments, and longer UAE stays. Weekly rentals are the sweet spot for value-conscious travelers who need transportation for more than a few days but less than a month. Popular among tourists spending 2-3 weeks exploring UAE, business travelers on extended assignments, and visitors attending Dubai Shopping Festival or Abu Dhabi Grand Prix. All weekly rentals include free GPS navigation, additional driver, and priority customer support. Flexible extension options available at discounted rates.",
+        "benefits": [
+          "Save 25-30% compared to daily rental rates",
+          "Free GPS navigation system and additional driver included",
+          "Priority customer support with dedicated account manager",
+          "Flexible pickup and drop-off at any UAE location",
+          "Complimentary vehicle swap if you want to try different car"
+        ],
+        "features": [
+          "Discounted weekly rates for 7, 14, or 21-day bookings",
+          "Free Salik/Darb toll tag with prepaid balance",
+          "Unlimited mileage across all seven UAE emirates",
+          "Priority vehicle selection and upgrades available",
+          "24/7 roadside assistance and replacement vehicle guarantee"
+        ],
+        "highlights": [
+          "Save up to 30% vs daily rates on week-long bookings",
+          "Most popular choice for 2-3 week UAE vacations",
+          "Average customer saves 500-800 AED per week",
+          "Preferred by 40% of long-stay tourists and expats"
+        ],
+        "faqs": [
+          {
+            "question": "How much do I save with weekly vs daily rental?",
+            "answer": "Weekly rentals save 25-30% compared to daily rates. For example, an economy car at 80 AED/day costs 560 AED for 7 days, but our weekly rate is only 400 AED - saving you 160 AED. The longer you rent, the more you save."
+          },
+          {
+            "question": "What's included free with weekly rentals?",
+            "answer": "Weekly rentals include GPS navigation, additional driver, Salik/Darb toll tag with prepaid credit, comprehensive insurance, unlimited mileage, and 24/7 support. You also get priority booking and free upgrades when available."
+          },
+          {
+            "question": "Can I extend my weekly rental to monthly?",
+            "answer": "Yes! If you decide to keep the car longer, we'll convert your booking to our even more economical monthly rate. Simply contact us 2-3 days before your rental period ends to arrange the extension."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "downgrade",
+          "entityId": "daily-rental",
+          "entityType": "service",
+          "weight": 8
+        },
+        {
+          "type": "upgrade",
+          "entityId": "monthly-rental",
+          "entityType": "service",
+          "weight": 9
+        },
+        {
+          "type": "alternative",
+          "entityId": "self-drive",
+          "entityType": "service",
+          "weight": 6
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} {emirate} - Save 30% on Extended Stays | Rental Fleet UAE",
+        "descriptionTemplate": "Weekly car rental in {emirate}, UAE. Save up to 30% on {vehicleType} rentals. Free GPS, insurance, unlimited mileage. Book your {emirate} weekly rental today!",
+        "keywords": ["weekly car rental uae", "weekly hire dubai", "7 day rental", "extended stay car rental", "weekly vehicle rental abu dhabi", "long term daily rental"],
+        "h1Template": "{name} Service in {emirate}",
+        "schemaType": "Service"
+      },
+      "priority": 9
+    },
+    {
+      "id": "monthly-rental",
+      "type": "service",
+      "slug": "monthly-rental",
+      "name": "Monthly Rental",
+      "displayName": "Monthly Car Rental",
+      "metadata": {
+        "duration": "30+ days",
+        "rating": 4.9,
+        "priceRange": {
+          "min": 1200,
+          "max": 12000,
+          "currency": "AED"
+        },
+        "stats": {
+          "averageBookingLength": 90,
+          "popularityRank": 3,
+          "customerSatisfaction": 97
+        },
+        "features": ["Maximum Savings", "VIP Service", "Free Maintenance", "Vehicle Replacement", "Corporate Plans"],
+        "tags": ["long-term", "economical", "expat", "business", "residents"]
+      },
+      "content": {
+        "description": "Monthly car rental offers the best value for long-term stays in UAE, with drastically reduced rates, free maintenance, and VIP services for expats and residents.",
+        "longDescription": "Experience the most economical car rental option in UAE with our monthly packages, saving up to 50% compared to daily rates. Perfect for expats relocating to UAE, long-term business assignments, residents whose cars are being shipped, and anyone needing reliable transportation for extended periods. Monthly rentals eliminate the hassles of car ownership - no insurance worries, maintenance costs, or registration fees. All monthly rentals include comprehensive insurance, free scheduled maintenance, complimentary vehicle replacement during service, and dedicated account management. Flexible month-to-month contracts with no long-term commitment required.",
+        "benefits": [
+          "Save up to 50% compared to daily rental rates",
+          "Free scheduled maintenance and vehicle servicing included",
+          "Complimentary replacement vehicle during maintenance",
+          "Dedicated account manager for priority support",
+          "Month-to-month flexibility with no long-term lock-in"
+        ],
+        "features": [
+          "Ultra-low monthly rates starting from 1,200 AED",
+          "Comprehensive insurance with zero deductible option",
+          "Free scheduled maintenance every 5,000 km",
+          "Unlimited mileage throughout UAE",
+          "Free vehicle swap option every 3 months"
+        ],
+        "highlights": [
+          "Most economical option - save up to 50% vs daily rates",
+          "Popular with expats and long-term business travelers",
+          "Average monthly rental: 3-6 months in UAE",
+          "No ownership hassles - no maintenance, insurance, or registration"
+        ],
+        "faqs": [
+          {
+            "question": "How much do monthly rentals cost in UAE?",
+            "answer": "Monthly rentals start from 1,200 AED for economy cars, 1,800 AED for sedans, 2,500 AED for SUVs, and up to 12,000 AED for luxury vehicles. These rates include insurance, maintenance, and unlimited mileage - much cheaper than daily or weekly rates."
+          },
+          {
+            "question": "Is maintenance included in monthly rentals?",
+            "answer": "Yes! All scheduled maintenance is included free of charge. We'll notify you when service is due, provide a replacement vehicle during maintenance, and handle everything at no extra cost. You just drive and enjoy."
+          },
+          {
+            "question": "Can I cancel my monthly rental anytime?",
+            "answer": "We offer flexible month-to-month contracts. Give us 7 days notice before your next billing cycle to cancel or modify your rental. No long-term commitments required, though longer commitments receive additional discounts."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "downgrade",
+          "entityId": "weekly-rental",
+          "entityType": "service",
+          "weight": 8
+        },
+        {
+          "type": "alternative",
+          "entityId": "self-drive",
+          "entityType": "service",
+          "weight": 7
+        },
+        {
+          "type": "related",
+          "entityId": "chauffeur-driven",
+          "entityType": "service",
+          "weight": 4
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} {emirate} - From 1200 AED/Month | Rental Fleet UAE",
+        "descriptionTemplate": "Monthly car rental in {emirate}, UAE from 1200 AED. {vehicleType} options with free maintenance, insurance, unlimited mileage. Book {emirate} monthly rental!",
+        "keywords": ["monthly car rental uae", "long term rental dubai", "monthly hire abu dhabi", "expat car rental", "monthly vehicle lease", "cheap monthly car rental"],
+        "h1Template": "{name} Service in {emirate}",
+        "schemaType": "Service"
+      },
+      "priority": 8
+    },
+    {
+      "id": "chauffeur-driven",
+      "type": "service",
+      "slug": "chauffeur-driven",
+      "name": "Chauffeur Driven",
+      "displayName": "Chauffeur Driven Service",
+      "metadata": {
+        "duration": "Hourly to Monthly",
+        "rating": 4.9,
+        "priceRange": {
+          "min": 100,
+          "max": 500,
+          "currency": "AED per hour"
+        },
+        "stats": {
+          "averageBookingLength": 8,
+          "popularityRank": 4,
+          "customerSatisfaction": 98
+        },
+        "features": ["Professional Driver", "VIP Service", "Airport Transfers", "Corporate Events", "Multilingual Chauffeurs"],
+        "tags": ["luxury", "professional", "executive", "convenience", "premium"]
+      },
+      "content": {
+        "description": "Chauffeur-driven service provides premium, stress-free transportation with professional drivers, perfect for business executives, special occasions, and luxury travelers in UAE.",
+        "longDescription": "Experience ultimate convenience with our chauffeur-driven service featuring professional, licensed drivers and luxury vehicles. Ideal for business executives who need to work while traveling, tourists who want to relax and enjoy UAE sights, airport transfers, corporate events, weddings, and special occasions. Our chauffeurs are expertly trained, multilingual (English, Arabic, Hindi, Urdu), and knowledgeable about UAE routes and attractions. Available by the hour, day, or month with flexible packages. All chauffeur services include luxury or executive vehicles, complimentary water and phone chargers, and professional service that makes every journey comfortable and memorable.",
+        "benefits": [
+          "Professional licensed drivers with 10+ years UAE experience",
+          "Stress-free travel - work, relax, or sightsee while we drive",
+          "Multilingual chauffeurs speaking English, Arabic, Hindi, Urdu",
+          "Perfect for business meetings, events, and special occasions",
+          "Luxury and executive vehicles with premium amenities"
+        ],
+        "features": [
+          "Professional chauffeurs in formal attire and name signs",
+          "Luxury sedans, SUVs, and executive vehicles available",
+          "Airport meet-and-greet with luggage assistance",
+          "Complimentary bottled water, tissues, and phone chargers",
+          "Flexible hourly, daily, or monthly chauffeur packages"
+        ],
+        "highlights": [
+          "Starting from 100 AED per hour (4-hour minimum)",
+          "Popular for airport transfers, business meetings, weddings",
+          "98% customer satisfaction rating - highest in UAE",
+          "Available 24/7 with advance booking at all UAE airports"
+        ],
+        "faqs": [
+          {
+            "question": "How much does chauffeur service cost in UAE?",
+            "answer": "Hourly rates start from 100 AED/hour (4-hour minimum) for standard vehicles, 150 AED/hour for luxury sedans, and 200 AED/hour for premium SUVs. Daily rates (8-12 hours) offer better value. Airport transfers are fixed rates starting from 200 AED."
+          },
+          {
+            "question": "Are chauffeurs licensed and experienced?",
+            "answer": "Yes! All our chauffeurs hold valid UAE driving licenses, have 10+ years professional driving experience, and undergo background checks. They're trained in professional etiquette, defensive driving, and UAE road regulations for your safety and comfort."
+          },
+          {
+            "question": "Can I book chauffeur service for airport pickup?",
+            "answer": "Absolutely! Airport chauffeur service includes meet-and-greet at arrivals with name sign, luggage assistance, and direct transfer to your destination. Available at Dubai, Abu Dhabi, and Sharjah airports 24/7. Book at least 24 hours in advance."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "alternative",
+          "entityId": "self-drive",
+          "entityType": "service",
+          "weight": 10
+        },
+        {
+          "type": "related",
+          "entityId": "daily-rental",
+          "entityType": "service",
+          "weight": 6
+        },
+        {
+          "type": "related",
+          "entityId": "monthly-rental",
+          "entityType": "service",
+          "weight": 5
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} {emirate} - Professional Drivers from 100 AED/hr",
+        "descriptionTemplate": "Chauffeur service in {emirate}, UAE from 100 AED/hour. Professional drivers, luxury {vehicleType}, airport transfers. Book {emirate} chauffeur service now!",
+        "keywords": ["chauffeur service uae", "driver rental dubai", "chauffeur driven cars", "airport transfer driver", "professional driver hire", "executive chauffeur dubai"],
+        "h1Template": "Professional {name} in {emirate}",
+        "schemaType": "Service"
+      },
+      "priority": 7
+    },
+    {
+      "id": "self-drive",
+      "type": "service",
+      "slug": "self-drive",
+      "name": "Self Drive",
+      "displayName": "Self Drive Rental",
+      "metadata": {
+        "duration": "Flexible",
+        "rating": 4.8,
+        "priceRange": {
+          "min": 60,
+          "max": 800,
+          "currency": "AED per day"
+        },
+        "stats": {
+          "averageBookingLength": 5,
+          "popularityRank": 1,
+          "customerSatisfaction": 95
+        },
+        "features": ["Complete Freedom", "No Driver Needed", "Privacy", "Flexible Routes", "Unlimited Mileage"],
+        "tags": ["independent", "freedom", "privacy", "flexible", "adventure"]
+      },
+      "content": {
+        "description": "Self-drive rental offers complete freedom and flexibility to explore UAE at your own pace, with no driver or schedule constraints - perfect for independent travelers.",
+        "longDescription": "Experience ultimate freedom with our self-drive rental service, allowing you to explore UAE completely on your own terms. Drive wherever you want, whenever you want, with no driver watching or schedule to follow. Perfect for independent travelers, adventurous tourists, families wanting privacy, and anyone who prefers controlling their own journey. Self-drive is the most popular rental option in UAE, chosen by 85% of tourists and business travelers. With automatic transmission vehicles, GPS navigation, and 24/7 roadside assistance, even first-time UAE visitors can confidently explore from Dubai's Burj Khalifa to Abu Dhabi's Sheikh Zayed Mosque. Unlimited mileage means you can visit all seven emirates without restrictions.",
+        "benefits": [
+          "Complete freedom to explore UAE at your own pace and schedule",
+          "Total privacy without a driver present in the vehicle",
+          "Unlimited mileage to explore all UAE emirates freely",
+          "Flexible routes - change plans anytime without notification",
+          "Most economical option for multi-day rentals and families"
+        ],
+        "features": [
+          "Easy-to-drive automatic transmission vehicles",
+          "GPS navigation systems with UAE maps and POIs",
+          "24/7 roadside assistance throughout UAE",
+          "Simple online booking with instant confirmation",
+          "Flexible pickup/drop-off at airports, hotels, or home"
+        ],
+        "highlights": [
+          "Most popular option - chosen by 85% of UAE visitors",
+          "Starting from 60 AED/day for economy cars",
+          "Available for all vehicle types from economy to luxury",
+          "Perfect for tourists, families, and business travelers"
+        ],
+        "faqs": [
+          {
+            "question": "Do I need special documents for self-drive in UAE?",
+            "answer": "Tourists need: valid passport, tourist visa, home country driving license, and International Driving Permit (IDP). UAE residents need: Emirates ID and valid UAE driving license. Minimum age is 21 years (25 for luxury/sports cars)."
+          },
+          {
+            "question": "Is self-drive safe for tourists in UAE?",
+            "answer": "Absolutely! UAE has excellent modern roads, clear English signage, and strict traffic enforcement making it very safe. GPS navigation is included, roads are well-maintained, and our 24/7 support team is always available to help with directions or issues."
+          },
+          {
+            "question": "Can I drive a self-drive rental to all emirates?",
+            "answer": "Yes! All self-drive rentals include unlimited mileage throughout UAE. Drive freely between Dubai, Abu Dhabi, Sharjah, and all seven emirates. Cross-border travel to Oman or Saudi Arabia requires advance approval and additional insurance."
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "alternative",
+          "entityId": "chauffeur-driven",
+          "entityType": "service",
+          "weight": 9
+        },
+        {
+          "type": "related",
+          "entityId": "daily-rental",
+          "entityType": "service",
+          "weight": 8
+        },
+        {
+          "type": "related",
+          "entityId": "weekly-rental",
+          "entityType": "service",
+          "weight": 7
+        }
+      ],
+      "seo": {
+        "titleTemplate": "{name} {emirate} - Explore UAE Your Way from 60 AED/Day",
+        "descriptionTemplate": "Self-drive car rental in {emirate}, UAE from 60 AED/day. {vehicleType} options, unlimited mileage, GPS included. Book your {emirate} self-drive rental today!",
+        "keywords": ["self drive rental uae", "self drive car hire dubai", "drive yourself rental", "independent car rental", "self drive abu dhabi", "tourist self drive uae"],
+        "h1Template": "{name} Car Rental in {emirate}",
+        "schemaType": "Service"
+      },
+      "priority": 10
+    }
+  ]
+}

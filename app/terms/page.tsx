@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { generateMetadata as genMeta } from "@/lib/seo-utils";
 import { siteConfig } from "@/lib/site-config";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata = genMeta({
   title: "Terms of Service",
@@ -12,6 +13,7 @@ export const metadata = genMeta({
 export default function TermsPage() {
   return (
     <>
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Terms", href: "/terms" }]} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 via-white to-amber-50 py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,7 +22,7 @@ export default function TermsPage() {
               Terms of Service
             </h1>
             <p className="text-lg text-gray-700 mb-4">
-              Last Updated: January 15, 2024
+              Last Updated: January 15, 2026
             </p>
             <p className="text-gray-600">
               Please read these terms carefully before using our website and services.
@@ -48,7 +50,7 @@ export default function TermsPage() {
             <div className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">2. Intellectual Property Rights</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Unless otherwise indicated, the website is our proprietary property and all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics on the website (collectively, the "Content") are owned or controlled by us or licensed to us.
+                Unless otherwise indicated, the website is our proprietary property and all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics on the website (collectively, the &quot;Content&quot;) are owned or controlled by us or licensed to us.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
                 The Content and the trademarks, service marks, and logos contained therein are protected by copyright and trademark laws. You are granted a limited license to access and use the website and to download or print a copy of any portion of the Content for your personal, non-commercial use only.
@@ -112,7 +114,7 @@ export default function TermsPage() {
             <div className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">6. Third-Party Websites and Content</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                The website may contain links to other websites ("Third-Party Websites") as well as articles, photographs, text, graphics, pictures, designs, music, sound, video, information, applications, software, and other content or items belonging to or originating from third parties.
+                The website may contain links to other websites (&quot;Third-Party Websites&quot;) as well as articles, photographs, text, graphics, pictures, designs, music, sound, video, information, applications, software, and other content or items belonging to or originating from third parties.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
                 Such Third-Party Websites and third-party content include our partners:{" "}

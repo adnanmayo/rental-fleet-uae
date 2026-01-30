@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { generateMetadata as genMeta } from "@/lib/seo-utils";
 import { siteConfig } from "@/lib/site-config";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata = genMeta({
   title: "Privacy Policy",
@@ -12,6 +13,7 @@ export const metadata = genMeta({
 export default function PrivacyPage() {
   return (
     <>
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Privacy", href: "/privacy" }]} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 via-white to-amber-50 py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,7 +22,7 @@ export default function PrivacyPage() {
               Privacy Policy
             </h1>
             <p className="text-lg text-gray-700 mb-4">
-              Last Updated: January 15, 2024
+              Last Updated: January 15, 2026
             </p>
             <p className="text-gray-600">
               Your privacy is important to us. This policy outlines how we collect, use, and protect your information.
@@ -240,7 +242,7 @@ export default function PrivacyPage() {
             <div className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">11. Updates to This Policy</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top of this policy.
+                We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last Updated&quot; date at the top of this policy.
               </p>
             </div>
 

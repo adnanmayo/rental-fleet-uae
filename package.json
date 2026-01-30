@@ -4,17 +4,24 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run db:migrate:knex && next build",
     "start": "next start",
     "lint": "eslint",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "db:migrate": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' ts-node --transpile-only scripts/migrate-json-to-mysql.ts",
+    "db:migrate:run": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' ts-node --transpile-only scripts/run-db-migrations.ts",
+    "db:migrate:knex": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' ts-node --transpile-only scripts/run-knex-migrations.ts",
+    "db:seed:blog": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' ts-node --transpile-only scripts/seed-blog-articles.ts"
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
+    "knex": "^3.1.0",
+    "mysql2": "^3.16.1",
     "next": "16.1.4",
-    "react": "19.2.3",
-    "react-dom": "19.2.3",
     "next-seo": "^6.6.0",
-    "next-sitemap": "^4.2.3"
+    "next-sitemap": "^4.2.3",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -24,6 +31,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.1.4",
     "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   }
 }
