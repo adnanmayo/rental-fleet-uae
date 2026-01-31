@@ -47,6 +47,9 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors"
+              data-ga-event="cta_click"
+              data-ga-label="autycloud_header"
+              data-ga-category="outbound"
             >
               Fleet Software
             </a>
@@ -94,6 +97,9 @@ export default function Header() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-center text-sm font-medium text-blue-600 hover:text-blue-700 py-2 border border-blue-600 rounded-lg transition-colors"
+                  data-ga-event="cta_click"
+                  data-ga-label="autycloud_header_mobile"
+                  data-ga-category="outbound"
                 >
                   Fleet Software
                 </a>

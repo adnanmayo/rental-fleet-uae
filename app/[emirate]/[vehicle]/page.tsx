@@ -363,6 +363,9 @@ export default async function EmirateVehiclePage({ params }: VehiclePageProps) {
                   <a
                     href={`${siteConfig.promotedSites.autycloud.url}?utm_source=rentalfleetuae&utm_campaign=${emirate.slug}-${vehicle.slug}`}
                     className="block w-full bg-blue-600 text-white text-center px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+                    data-ga-event="cta_click"
+                    data-ga-label={`autycloud_vehicle_${emirate.slug}_${vehicle.slug}`}
+                    data-ga-category="outbound"
                   >
                     Manage Fleet with AutyCloud
                   </a>

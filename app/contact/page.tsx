@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
+import { trackEvent } from "@/lib/gtag";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function ContactPage() {
@@ -20,7 +21,7 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // In production, this would send to an API endpoint
-    console.log('Form submitted:', formData);
+    trackEvent("generate_lead", { method: "contact_form" });
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 5000);
   };
@@ -122,6 +123,9 @@ export default function ContactPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center text-blue-600 hover:text-blue-700 group"
+                    data-ga-event="cta_click"
+                    data-ga-label="autycloud_contact_sidebar"
+                    data-ga-category="outbound"
                   >
                     <svg className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -346,6 +350,9 @@ export default function ContactPage() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-all shadow-lg"
+              data-ga-event="cta_click"
+              data-ga-label="autycloud_contact_cta"
+              data-ga-category="outbound"
             >
               Try AutyCloud Free
             </a>

@@ -322,6 +322,9 @@ export default function ResourcesPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition"
+                data-ga-event="cta_click"
+                data-ga-label="autycloud_resources"
+                data-ga-category="outbound"
               >
                 Explore AutyCloud
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

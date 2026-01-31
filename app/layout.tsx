@@ -4,7 +4,10 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import GoogleTagEventListener from "@/components/GoogleTagEventListener";
 import { siteConfig, organizationSchema } from "@/lib/site-config";
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-KQ8RGV524C";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -63,19 +66,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <head>
-        {/* Google tag (gtag.js) */}
+        {/* Google tag (gtag.js) - use NEXT_PUBLIC_GA_ID to override default */}
         <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-KQ8RGV524C"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
           strategy="afterInteractive"
         />
         <Script id="google-gtag" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-KQ8RGV524C');
-          `}
+          {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${GA_ID}');`}
         </Script>
 
         {/* JSON-LD Schema for Organization */}
@@ -90,6 +87,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
+        <GoogleTagEventListener />
       </body>
     </html>
   );

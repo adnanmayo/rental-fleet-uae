@@ -144,6 +144,9 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300"
+                data-ga-event="cta_click"
+                data-ga-label="autycloud_footer"
+                data-ga-category="outbound"
               >
                 {siteConfig.promotedSites.autycloud.name}
               </a>

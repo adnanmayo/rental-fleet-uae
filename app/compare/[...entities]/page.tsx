@@ -366,6 +366,9 @@ export default async function ComparePage({ params }: ComparePageProps) {
               <a
                 href={`${siteConfig.promotedSites.autycloud.url}?utm_source=rentalfleetuae&utm_campaign=compare`}
                 className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition"
+                data-ga-event="cta_click"
+                data-ga-label="autycloud_compare"
+                data-ga-category="outbound"
               >
                 Manage Your Fleet
               </a>

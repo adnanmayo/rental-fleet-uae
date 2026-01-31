@@ -44,7 +44,7 @@ export default function AboutPage() {
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Our commitment to white-hat practices and valuable content creation has made us a trusted resource in the UAE rental community, partnering with leading solutions like{' '}
-                <a href={siteConfig.promotedSites.autycloud.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 underline">
+                <a href={siteConfig.promotedSites.autycloud.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 underline" data-ga-event="cta_click" data-ga-label="autycloud_about_inline" data-ga-category="outbound">
                   AutyCloud
                 </a>
                 {' '}for fleet management technology.
@@ -303,6 +303,9 @@ export default function AboutPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold group"
+                data-ga-event="cta_click"
+                data-ga-label="autycloud_about_partners"
+                data-ga-category="outbound"
               >
                 Explore AutyCloud
                 <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

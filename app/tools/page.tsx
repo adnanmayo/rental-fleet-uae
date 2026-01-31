@@ -93,6 +93,9 @@ export default function ToolsPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-700 underline font-semibold"
+                  data-ga-event="cta_click"
+                  data-ga-label="autycloud_tools_inline"
+                  data-ga-category="outbound"
                 >
                   fleet management software
                 </a>
@@ -378,6 +381,9 @@ export default function ToolsPage() {
               target="_blank"
               rel="noopener noreferrer"
               className="underline font-semibold hover:text-white"
+              data-ga-event="cta_click"
+              data-ga-label="autycloud_tools_cta_inline"
+              data-ga-category="outbound"
             >
               AutyCloud
             </a>
@@ -389,6 +395,9 @@ export default function ToolsPage() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-all shadow-lg"
+              data-ga-event="cta_click"
+              data-ga-label="autycloud_tools_cta"
+              data-ga-category="outbound"
             >
               Try AutyCloud Free
             </a>

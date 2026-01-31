@@ -219,7 +219,10 @@ export default async function EmiratePage({ params }: EmiratePageProps) {
                 <h3 className="text-xl font-bold mb-4">Quick Links</h3>
                 <div className="space-y-3">
                   <Link href={`${siteConfig.promotedSites.autycloud.url}?utm_source=rentalfleetuae&utm_campaign=${emirate.slug}`}
-                    className="block text-blue-600 hover:text-blue-800 font-medium">
+                    className="block text-blue-600 hover:text-blue-800 font-medium"
+                    data-ga-event="cta_click"
+                    data-ga-label={`autycloud_emirate_${emirate.slug}`}
+                    data-ga-category="outbound">
                     → Fleet Management Software
                   </Link>
                   <Link href="/blog" className="block text-blue-600 hover:text-blue-800 font-medium">
@@ -237,7 +240,10 @@ export default async function EmiratePage({ params }: EmiratePageProps) {
                 <div className="space-y-4">
                   <div className="border-l-4 border-blue-500 pl-4">
                     <a href={siteConfig.promotedSites.autycloud.url}
-                      className="font-semibold text-blue-600 hover:text-blue-800">
+                      className="font-semibold text-blue-600 hover:text-blue-800"
+                      data-ga-event="cta_click"
+                      data-ga-label={`autycloud_emirate_card_${emirate.slug}`}
+                      data-ga-category="outbound">
                       {siteConfig.promotedSites.autycloud.name}
                     </a>
                     <p className="text-sm text-gray-600 mt-1">
@@ -355,6 +361,9 @@ export default async function EmiratePage({ params }: EmiratePageProps) {
             <a
               href={`${siteConfig.promotedSites.autycloud.url}?utm_source=rentalfleetuae&utm_campaign=${emirate.slug}`}
               className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition"
+              data-ga-event="cta_click"
+              data-ga-label={`autycloud_emirate_cta_${emirate.slug}`}
+              data-ga-category="outbound"
             >
               Manage Your Fleet with AutyCloud
             </a>

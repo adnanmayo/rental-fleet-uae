@@ -102,7 +102,7 @@ export default function FleetManagementGuidePage() {
                 best car rental software UAE 2026
               </Link>{" "}
               guide and run the 7-day reality test before you sign. For a cloud-first option, compare{" "}
-              <a href={siteConfig.promotedSites.autycloud.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+              <a href={siteConfig.promotedSites.autycloud.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline" data-ga-event="cta_click" data-ga-label="autycloud_fleet_management" data-ga-category="outbound">
                 AutyCloud
               </a>{" "}
               features and demo.

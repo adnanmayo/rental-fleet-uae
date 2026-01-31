@@ -13,6 +13,9 @@ export default function DownloadButton({ title, file, description, className = '
       href={`/downloads/${file}`}
       download
       className={`inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all shadow-md hover:shadow-lg group ${className}`}
+      data-ga-event="download"
+      data-ga-label={file}
+      data-ga-category="resource"
     >
       <svg
         className="w-5 h-5 mr-2 group-hover:animate-bounce"

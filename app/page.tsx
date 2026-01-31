@@ -29,6 +29,9 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all shadow-lg hover:shadow-xl group"
+                  data-ga-event="cta_click"
+                  data-ga-label="autycloud_hero"
+                  data-ga-category="outbound"
                 >
                   <svg className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -349,7 +352,7 @@ export default function Home() {
               </div>
               <p className="text-gray-700 mb-6 leading-relaxed italic">
                 &quot;Implementing {' '}
-                <a href={siteConfig.promotedSites.autycloud.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 underline">
+                <a href={siteConfig.promotedSites.autycloud.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 underline" data-ga-event="cta_click" data-ga-label="autycloud_testimonial" data-ga-category="outbound">
                   fleet management software
                 </a>
                 {' '} transformed our operations. We reduced operational costs by 30% and increased customer satisfaction significantly.&quot;
@@ -359,6 +362,9 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold group"
+                data-ga-event="cta_click"
+                data-ga-label="autycloud_demo_testimonial"
+                data-ga-category="outbound"
               >
                 Book a demo
                 <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -424,6 +430,9 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-all shadow-lg group"
+              data-ga-event="cta_click"
+              data-ga-label="autycloud_cta_section"
+              data-ga-category="outbound"
             >
               <span>Try AutyCloud Free</span>
               <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
