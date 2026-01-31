@@ -1715,4 +1715,139 @@ export const blogArticles: BlogArticle[] = [
 <p><em>Written by Adnan Mumtaz, Fleet Operations Consultant – Dubai</em></p>
     `.trim(),
   },
+  {
+    slug: "car-rental-software-features-list-uae-2026",
+    title: "Car Rental Software Features List (UAE 2026): The Only Checklist That Matters in Dubai & Abu Dhabi",
+    category: "Fleet Tech",
+    publishedTime: PUBLISHED_2026_01_30,
+    modifiedTime: PUBLISHED_2026_01_30,
+    primaryKeyword: "car rental software features list",
+    secondaryKeywords: [
+      "car rental management software UAE",
+      "cloud car rental CRM",
+      "mobile app car rental software",
+      "car rental software with GPS",
+      "online payment car rental software",
+      "car rental invoicing software",
+      "preventive maintenance car rental software",
+      "how to choose car rental software 2026",
+    ],
+    contentHtml: `
+<h1 id="features-list-uae-2026">Car Rental Software Features List (UAE 2026): The Only Checklist That Matters in Dubai &amp; Abu Dhabi</h1>
+
+<p>Every vendor has a “features list”. Most of them are fluff. In the UAE, the features that matter are the ones that stop disputes, protect deposits, and keep cars turning in peak season without your ops team having a nervous breakdown.</p>
+
+<p>Look, I’ve watched two fleets in Al Quoz buy “cheap software” because the demo looked pretty. Three months later they were still doing handovers on WhatsApp, deposits in a notebook, and arguing about Salik. Same headaches, new subscription.</p>
+
+<h2 id="toc">Table of Contents</h2>
+<ul>
+  <li><a href="#baseline">Baseline features (non-negotiable)</a></li>
+  <li><a href="#uae-specific">UAE-specific features (where margin leaks)</a></li>
+  <li><a href="#scale">Scaling features (50 cars vs 200 cars)</a></li>
+  <li><a href="#demo">How to test a features list in a demo</a></li>
+</ul>
+
+<h2 id="baseline">Baseline features (non-negotiable)</h2>
+<ul>
+  <li><strong>Reservations + availability</strong> with buffers (cleaning, delivery, late returns)</li>
+  <li><strong>Digital contracts</strong> with audit trail (who edited what, when)</li>
+  <li><strong>Deposits + refunds ledger</strong> (no “bro I refunded” drama)</li>
+  <li><strong>Mobile check-in/out</strong> with photos + signatures (hotel/airport handovers)</li>
+  <li><strong>Invoicing</strong> that’s VAT-ready and exportable</li>
+  <li><strong>Maintenance scheduling</strong> that blocks bookings automatically</li>
+</ul>
+
+<h2 id="uae-specific">UAE-specific features (where margin leaks)</h2>
+<ul>
+  <li><strong>Salik + fines workflow</strong>: import → assign to contract → notify → ledger status. Official refs: <a href="https://www.salik.ae/" target="_blank" rel="nofollow noopener noreferrer">Salik</a> and <a href="https://www.rta.ae/" target="_blank" rel="nofollow noopener noreferrer">RTA</a>.</li>
+  <li><strong>Arabic/English support</strong> (true bilingual UI, not half-translated menus)</li>
+  <li><strong>Multi-location controls</strong> (Dubai/Sharjah/Abu Dhabi transfers with approvals)</li>
+  <li><strong>GPS visibility</strong> (at least live location + trip history) — see <a href="/blog/fleet-tracking-software-for-rentals-uae-2026">fleet tracking software for rentals</a></li>
+  <li><strong>Online payments</strong> for deposits/prepayment — see <a href="/blog/car-rental-payment-integration-uae-2026">car rental payment integration</a></li>
+</ul>
+
+<h2 id="scale">Scaling features (50 cars vs 200 cars)</h2>
+<p>If you’re under 50 cars, you want speed: mobile workflows, payments, and dispute protection. If you’re 100+ cars, you’ll feel pain without roles, approvals, and reporting cadence.</p>
+<ul>
+  <li><strong>Role-based permissions</strong> and approvals (pricing edits, refunds, contract changes)</li>
+  <li><strong>Analytics</strong> for utilization + idle days — see <a href="/blog/car-rental-analytics-software-uae-2026-kpis">car rental analytics KPIs</a></li>
+  <li><strong>Dynamic pricing support</strong> (rules/AI-assisted) — see <a href="/blog/ai-pricing-for-car-rental-software-uae-2026-guardrails">AI pricing guardrails</a></li>
+</ul>
+
+<h2 id="demo">How to test a features list in a demo</h2>
+<ol>
+  <li>Run one contract end-to-end (including refund).</li>
+  <li>Simulate a Salik/fine assignment to a closed contract with an audit trail.</li>
+  <li>Do the full handover from a phone in a parking lot.</li>
+  <li>Export contracts + invoices (exit test).</li>
+</ol>
+
+<p>If you want the full “choose the right platform” walkthrough, start here: <a href="/blog/best-car-rental-software-uae-2026">best car rental software UAE 2026</a>. If you’re benchmarking cloud-first platforms, compare options and include <a href="https://autycloud.com/features" target="_blank" rel="nofollow noopener noreferrer">AutyCloud’s mobile-first features</a> in your demo shortlist.</p>
+
+<p><em>Written by Adnan Mumtaz, Fleet Operations Consultant – Dubai</em></p>
+    `.trim(),
+  },
+  {
+    slug: "rental-fleet-optimization-software-uae-2026",
+    title: "Rental Fleet Optimization Software (UAE 2026): Stop Bleeding Money on Idle Days, Downtime, and Bad Handoffs",
+    category: "Operations",
+    publishedTime: PUBLISHED_2026_01_30,
+    modifiedTime: PUBLISHED_2026_01_30,
+    primaryKeyword: "rental fleet optimization software",
+    secondaryKeywords: [
+      "real-time fleet management software",
+      "car rental automation tools",
+      "preventive maintenance car rental software",
+      "car rental analytics software",
+      "multi-location car rental software",
+      "fleet tracking software for rentals",
+    ],
+    contentHtml: `
+<h1 id="fleet-optimization-uae-2026">Rental Fleet Optimization Software (UAE 2026): Stop Bleeding Money on Idle Days, Downtime, and Bad Handoffs</h1>
+
+<p>Fleet optimization sounds like a consultant word. In Dubai and Abu Dhabi ops, it’s simple: fewer idle days, fewer disputes, and fewer “where’s the car?” phone calls. That’s it.</p>
+
+<p>Real talk: I’ve seen a Sharjah operator obsess over discounts while 10 cars sat idle for a week because nobody tracked downtime properly. That’s not pricing — that’s operational blindness.</p>
+
+<h2 id="toc">Table of Contents</h2>
+<ul>
+  <li><a href="#leaks">The 5 biggest profit leaks in UAE fleets</a></li>
+  <li><a href="#system">What fleet optimization software should do</a></li>
+  <li><a href="#playbook">A weekly optimization playbook (30 minutes)</a></li>
+  <li><a href="#tools">Tools + features to prioritize</a></li>
+</ul>
+
+<h2 id="leaks">The 5 biggest profit leaks in UAE fleets</h2>
+<ol>
+  <li><strong>Idle days</strong> hidden by bad reporting</li>
+  <li><strong>Downtime</strong> (maintenance + accidents + cleaning) not tracked as a KPI</li>
+  <li><strong>Disputes</strong> due to weak handover evidence</li>
+  <li><strong>Late returns</strong> that break availability</li>
+  <li><strong>Fines/tolls</strong> assigned late (margin killer)</li>
+</ol>
+
+<h2 id="system">What fleet optimization software should do</h2>
+<ul>
+  <li><strong>Real-time status</strong> across vehicles (available / rented / overdue / blocked)</li>
+  <li><strong>Utilization + idle days reporting</strong> by class and branch</li>
+  <li><strong>Maintenance scheduling</strong> that blocks bookings automatically</li>
+  <li><strong>GPS visibility</strong> for recovery and accountability — see <a href="/blog/fleet-tracking-software-for-rentals-uae-2026">fleet tracking software</a></li>
+  <li><strong>Mobile handovers</strong> with photos/signatures to kill disputes — see <a href="/blog/contactless-car-rental-software-dubai-2026">contactless rentals</a></li>
+</ul>
+
+<h2 id="playbook">A weekly optimization playbook (30 minutes)</h2>
+<ol>
+  <li>Pull “idle 7+ days” report and pick 3 vehicles to fix this week.</li>
+  <li>Review downtime reasons (maintenance vs accident vs cleaning) and set blockers.</li>
+  <li>Check upcoming returns and overdues; protect tomorrow’s availability.</li>
+  <li>Review fines/tolls pending assignment (daily habit, weekly audit).</li>
+  <li>Adjust pricing rules only after ops is clean (otherwise you’re optimizing chaos).</li>
+</ol>
+
+<h2 id="tools">Tools + features to prioritize</h2>
+<p>Start with your core platform choice. Here’s the selection guide: <a href="/blog/best-car-rental-software-uae-2026">best car rental software UAE 2026</a>. For KPI focus, use <a href="/blog/car-rental-analytics-software-uae-2026-kpis">car rental analytics KPIs</a>. If you’re shortlisting modern cloud-first platforms, include <a href="https://autycloud.com/features" target="_blank" rel="nofollow noopener noreferrer">AutyCloud features</a> and evaluate whether your ops lead can run the playbook above without spreadsheets.</p>
+
+<p><em>Written by Adnan Mumtaz, Fleet Operations Consultant – Dubai</em></p>
+    `.trim(),
+  },
 ];
